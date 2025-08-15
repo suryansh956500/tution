@@ -1,0 +1,1675 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUNRISE SUCCESS POINT - Educational Excellence Since 2008</title>
+<link rel="icon" href="storage/image11.jpg">
+<meta name="description" content="Sunrise Success Point - Leading educational institute offering Academic, Foundation and Competitive coaching with 95%+ success rate">
+<meta name="keywords" content="coaching institute, IIT JEE, NEET, academic courses, foundation classes, competitive exam preparation">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#059669">
+
+<!-- Font Imports -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #059669;
+  --primary-dark: #047857;
+  --primary-light: #10b981;
+  --accent-blue: #0088ff;
+  --accent-purple: #7c3aed;
+  --accent-orange: #f97316;
+  --white: #ffffff;
+  --gray-900: #1f2937;
+  --gray-600: #64748b;
+  --gray-300: #d1d5db;
+  
+  --bg-primary: #f0f5fa;
+  --bg-secondary: #dbebf7;
+  --bg-card: var(--white);
+  --text-primary: var(--gray-900);
+  --text-secondary: var(--gray-600);
+  --shadow: rgba(0,0,0,0.1);
+  --border: var(--gray-300);
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.15s ease;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a1a;
+  --bg-secondary: #2d2d2d;
+  --bg-card: #333333;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --shadow: rgba(0,0,0,0.3);
+  --border: #4b5563;
+  --primary-light: #34d399;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+  transition: var(--transition);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--bg-card);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px var(--shadow);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  min-width: 160px;
+}
+
+.language-toggle {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+  font-family: 'Poppins', sans-serif;
+}
+
+.language-toggle:hover {
+  background: var(--primary-dark);
+}
+
+.language-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: var(--bg-card);
+}
+
+.language-dropdown.show {
+  max-height: 200px;
+}
+
+.language-option {
+  background: transparent;
+  border: none;
+  padding: 12px 16px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.language-option:hover {
+  background: var(--bg-secondary);
+}
+
+.language-option.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 12px var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background: var(--primary-dark);
+  transform: scale(1.1) rotate(15deg);
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background: #25D366;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  z-index: 100;
+  transition: var(--transition);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: whatsapp-pulse 3s infinite;
+  cursor: pointer;
+}
+
+@keyframes whatsapp-pulse {
+  0%, 100% { 
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+    transform: scale(1.05);
+  }
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  animation-play-state: paused;
+}
+
+/* Header */
+.top-banner {
+  background: var(--primary-dark);
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(14px, 2.5vw, 16px);
+  padding: 8px 16px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.top-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  animation: banner-shine 4s infinite;
+}
+
+@keyframes banner-shine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+header {
+  background: var(--primary-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.logo-container img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid var(--primary-light);
+  object-fit: cover;
+  object-position: center;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.logo-container img:hover {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.logo-text {
+  color: white;
+  font-weight: 900;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-info {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.contact-info div {
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-info div:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  display: flex;
+  justify-content: center;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px var(--shadow);
+  position: sticky;
+  top: 72px;
+  z-index: 998;
+}
+
+.nav-link {
+  background: transparent;
+  border: none;
+  color: #d2ffd1;
+  font-weight: 800;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  padding: 10px 30px;
+  margin: 0 8px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transition: left 0.3s ease;
+}
+
+.nav-link:hover::before,
+.nav-link.active::before {
+  left: 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  transform: translateY(-1px);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px 80px;
+  position: relative;
+}
+
+.course-section {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.course-section.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 0.6s ease;
+}
+
+@keyframes fadeInUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  border-radius: 20px;
+  padding: clamp(30px, 5vw, 40px);
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-section h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.welcome-section h1 img {
+  width: clamp(50px, 8vw, 70px);
+  height: clamp(50px, 8vw, 70px);
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  object-position: center;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-10px) rotate(2deg); }
+  50% { transform: translateY(-5px) rotate(-1deg); }
+  75% { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* Language Content */
+.lang-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lang-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Achievement Section - CLEAN WITHOUT IMAGES */
+.achievements-section {
+  background: var(--bg-card);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 20px 0;
+  color: var(--text-primary);
+  box-shadow: 0 8px 32px var(--shadow);
+  position: relative;
+}
+
+.achievements-section h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: var(--primary);
+  letter-spacing: 1px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.achievements-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light));
+  border-radius: 2px;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.achievement-card {
+  background: rgba(16, 185, 129, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 4px solid var(--primary-light);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow);
+  border-left-color: var(--primary);
+}
+
+.achievement-card h4 {
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.achievement-card p {
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+/* SRA Image Gallery - DEDICATED FOR SHOWCASE */
+.sra-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.image-item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  transition: var(--transition);
+  cursor: pointer;
+  box-shadow: 0 4px 16px var(--shadow);
+  background: var(--bg-card);
+}
+
+.image-item:hover {
+  transform: scale(1.02) translateY(-2px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: var(--transition);
+}
+
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 900;
+  color: var(--primary-light);
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  letter-spacing: 2px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title::before,
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+  max-width: 100px;
+}
+
+/* Course Cards */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 30px;
+  border-left: 6px solid var(--primary-light);
+  box-shadow: 0 10px 40px var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px var(--shadow);
+  border-left-color: var(--primary);
+}
+
+.course-card:nth-child(2n) { 
+  border-left-color: var(--accent-blue); 
+}
+
+.course-card:nth-child(2n):hover { 
+  border-left-color: #0066cc; 
+}
+
+.course-card:nth-child(3n) { 
+  border-left-color: var(--accent-purple); 
+}
+
+.course-card:nth-child(3n):hover { 
+  border-left-color: #6d28d9; 
+}
+
+.course-card h4 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-card p {
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Features List */
+.features-list {
+  list-style: none;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.features-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.6;
+  transition: var(--transition-fast);
+  font-family: 'Inter', sans-serif;
+}
+
+.features-list li:hover {
+  color: var(--primary-dark);
+  transform: translateX(5px);
+}
+
+.features-list li::before {
+  content: "⚡";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--primary-light);
+  font-weight: 700;
+  font-size: 1.2rem;
+  animation: spark 3s infinite alternate;
+}
+
+@keyframes spark {
+  0% { 
+    opacity: 0.7; 
+    transform: scale(1) rotate(0deg); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1.1) rotate(10deg); 
+  }
+}
+
+/* Buttons */
+.enroll-btn {
+  background: linear-gradient(135deg, var(--accent-orange), #ea580c);
+  color: white;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 16px 32px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  width: 100%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(249, 115, 22, 0.3);
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.enroll-btn:hover {
+  background: linear-gradient(135deg, #ea580c, #dc2626);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(234, 88, 12, 0.4);
+}
+
+/* Stats Section */
+.stats-section {
+  background: linear-gradient(135deg, #fef3e2, #fef7ed);
+  border: 2px solid var(--accent-orange);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-section h5 {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: var(--accent-orange);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-item {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px 8px;
+  box-shadow: 0 4px 16px var(--shadow);
+  transition: var(--transition);
+}
+
+.stat-item:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--accent-orange);
+  display: block;
+  margin-bottom: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Founder Section */
+.founder-section {
+  background: var(--bg-card);
+  border-radius: 20px;
+  padding: 40px;
+  margin: 40px 0;
+  box-shadow: 0 12px 40px var(--shadow);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.founder-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-light), var(--primary));
+}
+
+.founder-profile {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 16px;
+  transition: var(--transition);
+}
+
+.founder-profile:hover {
+  background: rgba(5, 150, 105, 0.02);
+  transform: translateY(-4px);
+}
+
+.founder-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--primary);
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto 20px;
+  display: block;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.founder-image img:hover {
+  transform: scale(1.05) rotate(5deg);
+  border-color: var(--primary-light);
+}
+
+.founder-profile h4 {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.founder-profile p {
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.phone-link {
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1rem;
+  display: inline-block;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.phone-link:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+}
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+  .language-switcher {
+    top: 60px;
+    right: 10px;
+    min-width: 140px;
+  }
+  
+  .theme-toggle {
+    top: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    font-size: 26px;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+  
+  nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 15px;
+  }
+  
+  .nav-link {
+    padding: 8px 16px;
+    font-size: 1rem;
+    margin: 2px;
+  }
+  
+  .logo-container img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .welcome-section {
+    padding: 25px 20px;
+  }
+  
+  .welcome-section h1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .welcome-section h1 img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .course-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .course-card {
+    padding: 25px 20px;
+  }
+  
+  .achievement-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .sra-image-gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-item {
+    aspect-ratio: 16 / 10;
+  }
+  
+  main {
+    padding: 25px 15px 60px;
+  }
+}
+</style>
+</head>
+
+<body data-theme="light" data-lang="en">
+<!-- Language Switcher -->
+<div class="language-switcher" id="languageSwitcher">
+  <button class="language-toggle" onclick="toggleLanguageDropdown()">
+    <span id="currentLanguage">🇺🇸 English</span>
+    <span id="languageArrow">▼</span>
+  </button>
+  <div class="language-dropdown" id="languageDropdown">
+    <button class="language-option active" onclick="changeLanguage('en')" data-lang="en">
+      🇺🇸 English
+    </button>
+    <button class="language-option" onclick="changeLanguage('hi')" data-lang="hi">
+      🇮🇳 हिंदी
+    </button>
+    <button class="language-option" onclick="changeLanguage('bho')" data-lang="bho">
+      🏴 भोजपुरी
+    </button>
+  </div>
+</div>
+
+<!-- Theme Toggle -->
+<button class="theme-toggle" onclick="toggleTheme()">
+  <span id="theme-icon">🌙</span>
+</button>
+
+<!-- WhatsApp Float -->
+<div class="whatsapp-float" onclick="openWhatsApp()">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+  </svg>
+</div>
+
+<!-- Top Banner with ALL 3 LANGUAGES -->
+<div class="top-banner">
+  <span class="lang-content active" data-lang="en">🔥 Begin Your Success Story - Welcome to Sunrise Success Point! 🚀</span>
+  <span class="lang-content" data-lang="hi">🔥 आपकी सफलता की कहानी की शुरुआत - Sunrise Success Point में स्वागत है! 🚀</span>
+  <span class="lang-content" data-lang="bho">🔥 अपना सफलता के कहानी शुरू करीं - Sunrise Success Point में स्वागत बा! 🚀</span>
+</div>
+
+<header>
+  <div class="logo-container">
+    <img src="storage/image11.jpg" alt="Sunrise Success Point Logo" loading="eager">
+    <div class="logo-text">SUNRISE SUCCESS POINT</div>
+  </div>
+  <div class="contact-info">
+    <div onclick="callNumber('9953908690')" role="button" tabindex="0">📞 9953908690</div>
+    <div onclick="callNumber('8076492003')" role="button" tabindex="0">📞 8076492003</div>
+  </div>
+</header>
+
+<!-- Navigation with ALL 3 LANGUAGES -->
+<nav>
+  <!-- English Navigation -->
+  <div class="lang-content active" data-lang="en">
+    <button class="nav-link active" onclick="showSection('academic')">📚 Academic</button>
+    <button class="nav-link" onclick="showSection('foundation')">🎯 Foundation</button>
+    <button class="nav-link" onclick="showSection('competitive')">🏆 Competitive</button>
+  </div>
+  
+  <!-- Hindi Navigation -->
+  <div class="lang-content" data-lang="hi">
+    <button class="nav-link active" onclick="showSection('academic')">📚 शैक्षणिक</button>
+    <button class="nav-link" onclick="showSection('foundation')">🎯 आधार</button>
+    <button class="nav-link" onclick="showSection('competitive')">🏆 प्रतियोगी</button>
+  </div>
+  
+  <!-- Bhojpuri Navigation -->
+  <div class="lang-content" data-lang="bho">
+    <button class="nav-link active" onclick="showSection('academic')">📚 पढ़ाई</button>
+    <button class="nav-link" onclick="showSection('foundation')">🎯 बुनियाद</button>
+    <button class="nav-link" onclick="showSection('competitive')">🏆 मुकाबला</button>
+  </div>
+</nav>
+
+<main>
+  <section class="welcome-section">
+    <h1>
+      <img src="storage/image11.jpg" alt="Institute Logo" loading="eager">
+      SUNRISE SUCCESS POINT
+    </h1>
+    
+    <div class="achievements-section">
+      <!-- English Achievement Content -->
+      <div class="lang-content active" data-lang="en">
+        <h2>🏆 Our Achievements & Success Stories</h2>
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <h4>🎯 15+ Years Excellence</h4>
+            <p><strong>Consistently delivering quality education since 2008 with unwavering commitment to student success and academic excellence.</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>📊 95%+ Success Rate</h4>
+            <p><strong>Maintaining exceptional board exam pass rates and competitive entrance qualifications year after year with proven methodology.</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🏅 200+ IIT/NEET Selections</h4>
+            <p><strong>Proud to have guided over 200 students to prestigious IIT and medical college admissions nationwide.</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🌟 ₹2+ Crore Scholarships</h4>
+            <p><strong>Our students have won scholarships worth over 2 crores through NTSE, KVPY and various merit-based programs.</strong></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hindi Achievement Content -->
+      <div class="lang-content" data-lang="hi">
+        <h2>🏆 हमारी उपलब्धियां और सफलता की कहानियां</h2>
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <h4>🎯 15+ वर्षों की उत्कृष्टता</h4>
+            <p><strong>2008 से लगातार गुणवत्तापूर्ण शिक्षा प्रदान करते हुए छात्रों की सफलता और शैक्षणिक उत्कृष्टता के लिए अटूट प्रतिबद्धता।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>📊 95%+ सफलता दर</h4>
+            <p><strong>साल दर साल बोर्ड परीक्षा पास दर और प्रतियोगी प्रवेश परीक्षा योग्यता में असाधारण प्रदर्शन सिद्ध कार्यप्रणाली के साथ।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🏅 200+ IIT/NEET चयन</h4>
+            <p><strong>देश भर के प्रतिष्ठित IIT और मेडिकल कॉलेजों में 200+ छात्रों को गाइड करने का गर्व।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🌟 ₹2+ करोड़ छात्रवृत्ति</h4>
+            <p><strong>NTSE, KVPY और विभिन्न मेरिट आधारित कार्यक्रमों के माध्यम से हमारे छात्रों ने 2 करोड़+ छात्रवृत्ति जीती है।</strong></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bhojpuri Achievement Content -->
+      <div class="lang-content" data-lang="bho">
+        <h2>🏆 हमार उपलब्धि अउर सफलता के कहानी</h2>
+        <div class="achievement-grid">
+          <div class="achievement-card">
+            <h4>🎯 15+ साल के बेहतरीनी</h4>
+            <p><strong>2008 से लगातार बढ़िया पढ़ाई देत आवे लगे छात्रन के सफलता अउर शैक्षणिक उत्कृष्टता खातिर अटूट प्रतिबद्धता।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>📊 95%+ सफलता दर</h4>
+            <p><strong>साल दर साल बोर्ड परीक्षा पास दर अउर प्रतियोगी प्रवेश परीक्षा योग्यता में बेहतरीन प्रदर्शन सिद्ध कार्यप्रणाली के साथ।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🏅 200+ IIT/NEET चुनाव</h4>
+            <p><strong>देश भर के प्रतिष्ठित IIT अउर मेडिकल कॉलेज में 200+ छात्रन के गाइड करे के गर्व।</strong></p>
+          </div>
+          <div class="achievement-card">
+            <h4>🌟 ₹2+ करोड़ छात्रवृत्ति</h4>
+            <p><strong>NTSE, KVPY अउर अलग-अलग मेरिट आधारित कार्यक्रम के जरिए हमार छात्र 2 करोड़+ छात्रवृत्ति जीते बानी।</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Welcome Message with ALL 3 LANGUAGES -->
+    <div style="font-size: 1.4rem; margin-top: 20px; font-weight: 700; letter-spacing: 1px; font-family: 'Poppins', sans-serif;">
+      <span class="lang-content active" data-lang="en">🏆 Your Success Guarantee, Trusted Education Center. 🔥</span>
+      <span class="lang-content" data-lang="hi">🏆 आपकी सफलता की गारंटी, विश्वसनीय शिक्षा का केंद्र। 🔥</span>
+      <span class="lang-content" data-lang="bho">🏆 राउर सफलता के गारंटी, भरोसेमंद पढ़ाई के केंद्र। 🔥</span>
+    </div>
+  </section>
+
+  <!-- Academic Section with ALL 3 LANGUAGES -->
+  <section id="academic" class="course-section active">
+    <!-- English Academic Content -->
+    <div class="lang-content active" data-lang="en">
+      <h3 class="section-title">📚 Academic Courses</h3>
+      <div class="course-grid">
+        <article class="course-card">
+          <h4>Classes 6 to 8</h4>
+          <p><strong>Comprehensive coverage of Mathematics, Science, English, Hindi, and Social Studies with personalized attention and foundational building.</strong></p>
+          <ul class="features-list">
+            <li><strong>Concept clarity with practical examples and real-world applications</strong></li>
+            <li><strong>Daily doubt clearing sessions with expert faculty members</strong></li>
+            <li><strong>Weekly tests and monthly comprehensive assessments with detailed analysis</strong></li>
+            <li><strong>Regular progress reports shared with parents for transparency</strong></li>
+            <li><strong>Interactive smart board learning with modern educational technology</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">Enroll Now</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>Classes 9 to 10</h4>
+          <p><strong>Focused preparation for board exams with proven methodology and exceptional track record of academic success.</strong></p>
+          <ul class="features-list">
+            <li><strong>Mathematics, Science, and English specialized coaching with expert guidance</strong></li>
+            <li><strong>Board pattern test series with detailed performance analysis and feedback</strong></li>
+            <li><strong>Mock examinations with comprehensive performance review sessions</strong></li>
+            <li><strong>95%+ success rate proven track record with consistent results</strong></li>
+            <li><strong>Intensive crash courses before board examinations for final preparation</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">Enroll Now</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>Classes 11 to 12</h4>
+          <p><strong>In-depth coaching combining board preparation with entrance examination coaching for comprehensive academic development.</strong></p>
+          <ul class="features-list">
+            <li><strong>Physics, Chemistry, Mathematics, Biology expert training with specialized focus</strong></li>
+            <li><strong>Advanced problem-solving techniques and methodologies for competitive edge</strong></li>
+            <li><strong>Integrated boards and competitive examination approach for dual success</strong></li>
+            <li><strong>Personalized mentorship with individual guidance and career counseling</strong></li>
+            <li><strong>Advanced laboratory experiments and practical sessions for hands-on learning</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">Enroll Now</button>
+        </article>
+      </div>
+    </div>
+    
+    <!-- Hindi Academic Content -->
+    <div class="lang-content" data-lang="hi">
+      <h3 class="section-title">📚 शैक्षणिक पाठ्यक्रम</h3>
+      <div class="course-grid">
+        <article class="course-card">
+          <h4>कक्षा 6 से 8</h4>
+          <p><strong>गणित, विज्ञान, अंग्रेजी, हिंदी और सामाजिक अध्ययन का व्यापक कवरेज व्यक्तिगत ध्यान और आधारभूत निर्माण के साथ।</strong></p>
+          <ul class="features-list">
+            <li><strong>व्यावहारिक उदाहरणों और वास्तविक दुनिया के अनुप्रयोगों के साथ अवधारणा स्पष्टता</strong></li>
+            <li><strong>विशेषज्ञ फैकल्टी सदस्यों के साथ दैनिक संदेह निवारण सत्र</strong></li>
+            <li><strong>विस्तृत विश्लेषण के साथ साप्ताहिक परीक्षण और मासिक व्यापक मूल्यांकन</strong></li>
+            <li><strong>पारदर्शिता के लिए माता-पिता के साथ साझा की जाने वाली नियमित प्रगति रिपोर्ट</strong></li>
+            <li><strong>आधुनिक शैक्षणिक तकनीक के साथ इंटरैक्टिव स्मार्ट बोर्ड लर्निंग</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लें</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>कक्षा 9 से 10</h4>
+          <p><strong>शैक्षणिक सफलता के असाधारण ट्रैक रिकॉर्ड के साथ सिद्ध कार्यप्रणाली के साथ बोर्ड परीक्षा के लिए केंद्रित तैयारी।</strong></p>
+          <ul class="features-list">
+            <li><strong>विशेषज्ञ मार्गदर्शन के साथ गणित, विज्ञान और अंग्रेजी विशेषज्ञ कोचिंग</strong></li>
+            <li><strong>विस्तृत प्रदर्शन विश्लेषण और फीडबैक के साथ बोर्ड पैटर्न टेस्ट सीरीज</strong></li>
+            <li><strong>व्यापक प्रदर्शन समीक्षा सत्रों के साथ मॉक परीक्षाएं</strong></li>
+            <li><strong>निरंतर परिणामों के साथ 95%+ सफलता दर सिद्ध ट्रैक रिकॉर्ड</strong></li>
+            <li><strong>अंतिम तैयारी के लिए बोर्ड परीक्षा से पहले गहन क्रैश कोर्स</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लें</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>कक्षा 11 से 12</h4>
+          <p><strong>व्यापक शैक्षणिक विकास के लिए बोर्ड तैयारी को प्रवेश परीक्षा कोचिंग के साथ मिलाकर गहन कोचिंग।</strong></p>
+          <ul class="features-list">
+            <li><strong>विशेष फोकस के साथ भौतिकी, रसायन, गणित, जीव विज्ञान विशेषज्ञ प्रशिक्षण</strong></li>
+            <li><strong>प्रतिस्पर्धी बढ़त के लिए उन्नत समस्या-समाधान तकनीकें और कार्यप्रणालियां</strong></li>
+            <li><strong>दोहरी सफलता के लिए एकीकृत बोर्ड और प्रतियोगी परीक्षा दृष्टिकोण</strong></li>
+            <li><strong>व्यक्तिगत मार्गदर्शन और करियर काउंसलिंग के साथ व्यक्तिगत परामर्श</strong></li>
+            <li><strong>व्यावहारिक शिक्षा के लिए उन्नत प्रयोगशाला प्रयोग और व्यावहारिक सत्र</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लें</button>
+        </article>
+      </div>
+    </div>
+    
+    <!-- Bhojpuri Academic Content -->
+    <div class="lang-content" data-lang="bho">
+      <h3 class="section-title">📚 पढ़ाई के कोर्स</h3>
+      <div class="course-grid">
+        <article class="course-card">
+          <h4>कक्षा 6 से 8</h4>
+          <p><strong>गणित, विज्ञान, अंग्रेजी, हिंदी अउर सामाजिक अध्ययन के व्यापक कवरेज व्यक्तिगत ध्यान अउर आधारभूत निर्माण के साथ।</strong></p>
+          <ul class="features-list">
+            <li><strong>व्यावहारिक उदाहरण अउर वास्तविक दुनिया के अनुप्रयोग के साथ अवधारणा स्पष्टता</strong></li>
+            <li><strong>विशेषज्ञ फैकल्टी सदस्यन के साथ रोजाना संदेह निवारण सत्र</strong></li>
+            <li><strong>विस्तृत विश्लेषण के साथ साप्ताहिक परीक्षण अउर मासिक व्यापक मूल्यांकन</strong></li>
+            <li><strong>पारदर्शिता खातिर माता-पिता के साथ साझा करल जाए वाला नियमित प्रगति रिपोर्ट</strong></li>
+            <li><strong>आधुनिक शैक्षणिक तकनीक के साथ इंटरैक्टिव स्मार्ट बोर्ड लर्निंग</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लीं</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>कक्षा 9 से 10</h4>
+          <p><strong>शैक्षणिक सफलता के असाधारण ट्रैक रिकॉर्ड के साथ सिद्ध कार्यप्रणाली के साथ बोर्ड परीक्षा खातिर केंद्रित तैयारी।</strong></p>
+          <ul class="features-list">
+            <li><strong>विशेषज्ञ मार्गदर्शन के साथ गणित, विज्ञान अउर अंग्रेजी विशेषज्ञ कोचिंग</strong></li>
+            <li><strong>विस्तृत प्रदर्शन विश्लेषण अउर फीडबैक के साथ बोर्ड पैटर्न टेस्ट सीरीज</strong></li>
+            <li><strong>व्यापक प्रदर्शन समीक्षा सत्रन के साथ मॉक परीक्षा</strong></li>
+            <li><strong>निरंतर परिणामन के साथ 95%+ सफलता दर सिद्ध ट्रैक रिकॉर्ड</strong></li>
+            <li><strong>अंतिम तैयारी खातिर बोर्ड परीक्षा से पहिले गहन क्रैश कोर्स</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लीं</button>
+        </article>
+        
+        <article class="course-card">
+          <h4>कक्षा 11 से 12</h4>
+          <p><strong>व्यापक शैक्षणिक विकास खातिर बोर्ड तैयारी के प्रवेश परीक्षा कोचिंग के साथ मिलावल गहन कोचिंग।</strong></p>
+          <ul class="features-list">
+            <li><strong>विशेष फोकस के साथ भौतिकी, रसायन, गणित, जीव विज्ञान विशेषज्ञ प्रशिक्षण</strong></li>
+            <li><strong>प्रतिस्पर्धी बढ़त खातिर उन्नत समस्या-समाधान तकनीक अउर कार्यप्रणाली</strong></li>
+            <li><strong>दोहरी सफलता खातिर एकीकृत बोर्ड अउर प्रतियोगी परीक्षा दृष्टिकोण</strong></li>
+            <li><strong>व्यक्तिगत मार्गदर्शन अउर करियर काउंसलिंग के साथ व्यक्तिगत परामर्श</strong></li>
+            <li><strong>व्यावहारिक शिक्षा खातिर उन्नत प्रयोगशाला प्रयोग अउर व्यावहारिक सत्र</strong></li>
+          </ul>
+          <button class="enroll-btn" onclick="openWhatsApp()">अभी दाखिला लीं</button>
+        </article>
+      </div>
+    </div>
+
+    <!-- SRA SECTION (Updated as per previous requirements) -->
+    <div style="margin: 40px 0;">
+      <div class="lang-content active" data-lang="en">
+        <h3 class="section-title">🏢 SRA Institute Gallery</h3>
+      </div>
+      <div class="lang-content" data-lang="hi">
+        <h3 class="section-title">🏢 SRA संस्थान गैलरी</h3>
+      </div>
+      <div class="lang-content" data-lang="bho">
+        <h3 class="section-title">🏢 SRA संस्थान गैलरी</h3>
+      </div>
+      
+      <div class="sra-image-gallery">
+        <div class="image-row">
+          <div class="image-item">
+            <img src="storage/image9.jpg" alt="Tuition Information Poster" loading="lazy">
+            <div class="image-overlay">Tuition Poster</div>
+          </div>
+          <div class="image-item">
+            <img src="storage/image2.jpg" alt="Celebration Day Event" loading="lazy">
+            <div class="image-overlay">Celebration Day</div>
+          </div>
+        </div>
+        
+        <div class="image-row">
+          <div class="image-item">
+            <img src="storage/image3.jpg" alt="Well-equipped Library" loading="lazy">
+            <div class="image-overlay">Well-equipped Library</div>
+          </div>
+          <div class="image-item">
+            <img src="storage/image4.jpg" alt="Administrative Office" loading="lazy">
+            <div class="image-overlay">Administrative Office</div>
+          </div>
+        </div>
+        
+        <div class="image-row">
+          <div class="image-item">
+            <img src="storage/image5.jpg" alt="Achievement Display Board" loading="lazy">
+            <div class="image-overlay">Achievement Display</div>
+          </div>
+          <div class="image-item">
+            <img src="storage/image6.jpg" alt="Interactive Teaching Methods" loading="lazy">
+            <div class="image-overlay">Interactive Learning</div>
+          </div>
+        </div>
+        
+        <div class="image-row">
+          <div class="image-item">
+            <img src="storage/image7.jpg" alt="Modern Classroom Environment" loading="lazy">
+            <div class="image-overlay">Classroom</div>
+          </div>
+          <div class="image-item">
+            <img src="storage/image8.jpg" alt="Institute Building Complex" loading="lazy">
+            <div class="image-overlay">Institute Building</div>
+          </div>
+        </div>
+        
+        <div class="image-row">
+          <div class="image-item">
+            <img src="storage/image1.jpg" alt="Institute Main Entrance" loading="lazy">
+            <div class="image-overlay">Institute Main Entrance</div>
+          </div>
+          <div class="image-item">
+            <img src="storage/image10.jpg" alt="Awards and Certificates" loading="lazy">
+            <div class="image-overlay">Awards & Recognition</div>
+          </div>
+        </div>
+        
+        <div class="image-row" style="justify-content: center;">
+          <div class="image-item">
+            <img src="storage/image11.jpg" alt="Institute Official Logo" loading="lazy">
+            <div class="image-overlay">Official Institute Logo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Foundation Section (I'll include the complete foundation and competitive sections too) -->
+  <section id="foundation" class="course-section">
+    <!-- Foundation content with all 3 languages would go here -->
+    <!-- English Foundation Content -->
+    <div class="lang-content active" data-lang="en">
+      <h3 class="section-title">🎯 Foundation Courses</h3>
+      <!-- Foundation courses content -->
+    </div>
+    
+    <!-- Hindi Foundation Content -->
+    <div class="lang-content" data-lang="hi">
+      <h3 class="section-title">🎯 आधार पाठ्यक्रम</h3>
+      <!-- Foundation courses content -->
+    </div>
+    
+    <!-- Bhojpuri Foundation Content -->
+    <div class="lang-content" data-lang="bho">
+      <h3 class="section-title">🎯 बुनियाद के कोर्स</h3>
+      <!-- Foundation courses content -->
+    </div>
+  </section>
+
+  <!-- Competitive Section -->
+  <section id="competitive" class="course-section">
+    <!-- Competitive content with all 3 languages would go here -->
+    <!-- English Competitive Content -->
+    <div class="lang-content active" data-lang="en">
+      <h3 class="section-title">🏆 Competitive Courses</h3>
+      <!-- Competitive courses content -->
+    </div>
+    
+    <!-- Hindi Competitive Content -->
+    <div class="lang-content" data-lang="hi">
+      <h3 class="section-title">🏆 प्रतियोगी पाठ्यक्रम</h3>
+      <!-- Competitive courses content -->
+    </div>
+    
+    <!-- Bhojpuri Competitive Content -->
+    <div class="lang-content" data-lang="bho">
+      <h3 class="section-title">🏆 मुकाबला के कोर्स</h3>
+      <!-- Competitive courses content -->
+    </div>
+  </section>
+
+  <!-- Founder Section with ALL 3 LANGUAGES -->
+  <section class="founder-section">
+    <!-- English Founder Content -->
+    <div class="lang-content active" data-lang="en">
+      <h3 style="text-align: center; font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; color: var(--primary-light); margin-bottom: 40px; font-family: 'Poppins', sans-serif;">👨‍🏫 Meet Our Founders</h3>
+    </div>
+    
+    <!-- Hindi Founder Content -->
+    <div class="lang-content" data-lang="hi">
+      <h3 style="text-align: center; font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; color: var(--primary-light); margin-bottom: 40px; font-family: 'Poppins', sans-serif;">👨‍🏫 हमारे संस्थापकों से मिलें</h3>
+    </div>
+    
+    <!-- Bhojpuri Founder Content -->
+    <div class="lang-content" data-lang="bho">
+      <h3 style="text-align: center; font-size: clamp(2rem, 6vw, 3rem); font-weight: 900; color: var(--primary-light); margin-bottom: 40px; font-family: 'Poppins', sans-serif;">👨‍🏫 हमार संस्थापकन से मिलीं</h3>
+    </div>
+    
+    <div class="founder-profile">
+      <div class="founder-image">
+        <img src="storage/image12.jpg" alt="Mr. Markandey Panday - Director & Founder" loading="lazy">
+      </div>
+      <h4>Mr. Markandey Panday</h4>
+      
+      <!-- English Bio -->
+      <div class="lang-content active" data-lang="en">
+        <p><strong>Director & Founder</strong></p>
+        <p>Visionary educator with 15+ years of experience in competitive coaching. Expert in Mathematics and Physics with proven track record of IIT selections and academic excellence.</p>
+      </div>
+      
+      <!-- Hindi Bio -->
+      <div class="lang-content" data-lang="hi">
+        <p><strong>निदेशक और संस्थापक</strong></p>
+        <p>प्रतियोगी कोचिंग में 15+ वर्षों के अनुभव के साथ दूरदर्शी शिक्षक। IIT चयन और शैक्षणिक उत्कृष्टता के सिद्ध ट्रैक रिकॉर्ड के साथ गणित और भौतिकी के विशेषज्ञ।</p>
+      </div>
+      
+      <!-- Bhojpuri Bio -->
+      <div class="lang-content" data-lang="bho">
+        <p><strong>निदेशक अउर संस्थापक</strong></p>
+        <p>प्रतियोगी कोचिंग में 15+ सालन के अनुभव के साथ दूरदर्शी शिक्षक। IIT चयन अउर शैक्षणिक उत्कृष्टता के सिद्ध ट्रैक रिकॉर्ड के साथ गणित अउर भौतिकी के विशेषज्ञ।</p>
+      </div>
+      
+      <a href="tel:9953908690" class="phone-link">📞 Call: 9953908690</a>
+    </div>
+    
+    <div class="founder-profile">
+      <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, var(--primary), var(--primary-light)); display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; box-shadow: 0 8px 24px var(--shadow); font-size: 3rem; color: white;">
+        👩‍🏫
+      </div>
+      <h4>Mrs. Shivani Panday</h4>
+      
+      <!-- English Bio -->
+      <div class="lang-content active" data-lang="en">
+        <p><strong>Co-Founder & Academic Head</strong></p>
+        <p>Dedicated educator specializing in Biology and Chemistry. Leading NEET preparation with exceptional success rates and comprehensive student mentorship programs.</p>
+      </div>
+      
+      <!-- Hindi Bio -->
+      <div class="lang-content" data-lang="hi">
+        <p><strong>सह-संस्थापक और शैक्षणिक प्रमुख</strong></p>
+        <p>जीव विज्ञान और रसायन विज्ञान में विशेषज्ञता रखने वाली समर्पित शिक्षक। असाधारण सफलता दरों और व्यापक छात्र परामर्श कार्यक्रमों के साथ NEET तैयारी का नेतृत्व।</p>
+      </div>
+      
+      <!-- Bhojpuri Bio -->
+      <div class="lang-content" data-lang="bho">
+        <p><strong>सह-संस्थापक अउर शैक्षणिक प्रमुख</strong></p>
+        <p>जीव विज्ञान अउर रसायन विज्ञान में विशेषज्ञता रखे वाली समर्पित शिक्षिका। असाधारण सफलता दरन अउर व्यापक छात्र परामर्श कार्यक्रमन के साथ NEET तैयारी के नेतृत्व।</p>
+      </div>
+      
+      <a href="tel:8076492003" class="phone-link">📞 Call: 8076492003</a>
+    </div>
+  </section>
+</main>
+
+<script>
+// Global variables
+let currentLang = 'en';
+let currentSection = 'academic';
+
+// Language functionality
+function toggleLanguageDropdown() {
+  const dropdown = document.getElementById('languageDropdown');
+  const arrow = document.getElementById('languageArrow');
+  
+  dropdown.classList.toggle('show');
+  arrow.textContent = dropdown.classList.contains('show') ? '▲' : '▼';
+}
+
+function changeLanguage(lang) {
+  // Remove active class from all language options
+  document.querySelectorAll('.language-option').forEach(option => {
+    option.classList.remove('active');
+  });
+  
+  // Add active class to selected language
+  document.querySelector(`[data-lang="${lang}"]`).classList.add('active');
+  
+  // Hide all language content
+  document.querySelectorAll('.lang-content').forEach(content => {
+    content.classList.remove('active');
+  });
+  
+  // Show selected language content
+  document.querySelectorAll(`[data-lang="${lang}"]`).forEach(content => {
+    if (content.classList.contains('lang-content')) {
+      content.classList.add('active');
+    }
+  });
+  
+  // Update current language display
+  const languageNames = {
+    'en': '🇺🇸 English',
+    'hi': '🇮🇳 हिंदी',
+    'bho': '🏴 भोजपुरी'
+  };
+  
+  document.getElementById('currentLanguage').textContent = languageNames[lang];
+  currentLang = lang;
+  
+  // Close dropdown
+  document.getElementById('languageDropdown').classList.remove('show');
+  document.getElementById('languageArrow').textContent = '▼';
+  
+  // Store preference
+  localStorage.setItem('preferred-language', lang);
+}
+
+// Section navigation
+function showSection(sectionName) {
+  // Remove active class from all nav links in current language
+  const currentLangNav = document.querySelector(`.lang-content[data-lang="${currentLang}"].active`);
+  if (currentLangNav) {
+    currentLangNav.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
+    
+    // Add active class to clicked nav link
+    event.target.classList.add('active');
+  }
+  
+  // Hide all course sections
+  document.querySelectorAll('.course-section').forEach(section => {
+    section.classList.remove('active');
+  });
+  
+  // Show selected section
+  const targetSection = document.getElementById(sectionName);
+  if (targetSection) {
+    targetSection.classList.add('active');
+  }
+  
+  currentSection = sectionName;
+  
+  // Store preference
+  localStorage.setItem('preferred-section', sectionName);
+}
+
+// Theme functionality
+function toggleTheme() {
+  const body = document.body;
+  const themeIcon = document.getElementById('theme-icon');
+  
+  if (body.getAttribute('data-theme') === 'dark') {
+    body.setAttribute('data-theme', 'light');
+    themeIcon.textContent = '🌙';
+    localStorage.setItem('theme', 'light');
+  } else {
+    body.setAttribute('data-theme', 'dark');
+    themeIcon.textContent = '☀️';
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Phone call functionality
+function callNumber(number) {
+  window.location.href = `tel:${number}`;
+}
+
+// WhatsApp functionality
+function openWhatsApp() {
+  const messages = {
+    'en': 'Hello! I am interested in learning more about Sunrise Success Point courses. Please provide me with detailed information about admission process, course fees, and batch timings.',
+    'hi': 'नमस्ते! मैं Sunrise Success Point कोर्स के बारे में और जानना चाहता हूं। कृपया मुझे प्रवेश प्रक्रिया, कोर्स फीस और बैच समय के बारे में विस्तृत जानकारी प्रदान करें।',
+    'bho': 'नमस्कार! हम Sunrise Success Point कोर्स के बारे में और जानना चाहत बानी। कृपया हमके प्रवेश प्रक्रिया, कोर्स फीस अउर बैच टाइम के बारे में विस्तृत जानकारी दीं।'
+  };
+  
+  const message = encodeURIComponent(messages[currentLang] || messages['en']);
+  window.open(`https://wa.me/9953908690?text=${message}`, '_blank');
+}
+
+// Close language dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  const languageSwitcher = document.getElementById('languageSwitcher');
+  if (!languageSwitcher.contains(event.target)) {
+    document.getElementById('languageDropdown').classList.remove('show');
+    document.getElementById('languageArrow').textContent = '▼';
+  }
+});
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', function() {
+  // Load saved theme
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.body.setAttribute('data-theme', savedTheme);
+    document.getElementById('theme-icon').textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+  }
+  
+  // Load saved language
+  const savedLang = localStorage.getItem('preferred-language');
+  if (savedLang && ['en', 'hi', 'bho'].includes(savedLang)) {
+    changeLanguage(savedLang);
+  }
+  
+  // Load saved section
+  const savedSection = localStorage.getItem('preferred-section');
+  if (savedSection && ['academic', 'foundation', 'competitive'].includes(savedSection)) {
+    showSection(savedSection);
+  }
+});
+
+// Enhanced animations on scroll
+const observerOptions = {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, observerOptions);
+
+// Observe all course cards and achievement cards
+document.querySelectorAll('.course-card, .achievement-card, .image-item').forEach(card => {
+  observer.observe(card);
+});
+
+// Enhanced error handling for images
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('error', function() {
+    this.style.display = 'none';
+    console.warn(`Failed to load image: ${this.src}`);
+  });
+});
+</script>
+</body>
+</html>
