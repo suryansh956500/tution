@@ -1,0 +1,3189 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>SUNRISE SUCCESS POINT - Educational Excellence Since 2008</title>
+<link rel="icon" href="storage/image11.jpg" />
+<meta name="description" content="Sunrise Success Point - Leading educational institute offering Academic, Foundation and Competitive coaching">
+<meta name="keywords" content="coaching institute, academic courses, JEE preparation, NEET coaching">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#059669">
+<style>
+  :root {
+    --primary-green: #059669;
+    --dark-green: #047857;
+    --light-green: #10b981;
+    --accent-blue: #0088ff;
+    --accent-purple: #7c3aed;
+    --accent-orange: #f97316;
+    --white: #fff;
+    --text-dark: #1f2937;
+    --text-muted: #64748b;
+    --border-light: #d1d5db;
+    --gradient-primary: linear-gradient(135deg, #059669, #10b981);
+    --gradient-warm: linear-gradient(135deg, #f97316, #ea580c);
+    --transition: 0.2s ease;
+  }
+  
+  * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #f0f5fa, #dbebf7);
+    min-height: 100vh;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .top-banner {
+    background: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(12px, 2.5vw, 16px);
+    padding: clamp(8px, 2vw, 12px) 16px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    user-select: none;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  header.site-header {
+    background: linear-gradient(135deg, var(--dark-green), var(--primary-green));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: clamp(12px, 3vw, 24px) clamp(20px, 5vw, 32px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    user-select: none;
+    position: relative;
+    z-index: 999;
+    min-height: clamp(70px, 14vw, 100px);
+    border-bottom: 3px solid #a5d39a;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 3vw, 24px);
+    flex: 1;
+    min-width: 0;
+    padding: clamp(8px, 2vw, 16px) 0;
+  }
+  
+  .logo-container img {
+    width: clamp(50px, 10vw, 90px);
+    height: clamp(50px, 10vw, 90px);
+    border-radius: 50%;
+    border: 3px solid #a5d39a;
+    box-shadow: 0 0 24px rgba(170, 221, 167, 0.6);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    object-fit: cover;
+    animation: logoPulse 2s infinite alternate;
+  }
+  
+  @keyframes logoPulse {
+    from { box-shadow: 0 0 24px rgba(170, 221, 167, 0.6); }
+    to { box-shadow: 0 0 32px rgba(170, 221, 167, 0.8); }
+  }
+  
+  .logo-container img:hover {
+    transform: scale(1.1);
+    border-color: #ffffff;
+  }
+  
+  .logo-text {
+    color: var(--white);
+    font-weight: 900;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    user-select: none;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .logo-text::after {
+    content: "Educational Excellence Since 2008";
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 500;
+    color: #a5d39a;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+  }
+  
+  .contact-info {
+    display: flex;
+    gap: clamp(6px, 1.5vw, 12px);
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .contact-info > div {
+    background: var(--primary-green);
+    color: var(--white);
+    cursor: pointer;
+    padding: clamp(6px, 1.5vw, 8px) clamp(10px, 2.5vw, 16px);
+    border-radius: 20px;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 1vw, 8px);
+    user-select: text;
+    transition: all var(--transition);
+    min-height: 36px;
+    white-space: nowrap;
+    border: none;
+    outline: none;
+  }
+  
+  .contact-info > div:hover {
+    background: var(--light-green);
+    transform: translateY(-1px);
+  }
+  
+  .phone-icon {
+    width: clamp(14px, 3vw, 18px);
+    height: clamp(14px, 3vw, 18px);
+    stroke: currentColor;
+    stroke-width: 2.5;
+    fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    flex-shrink: 0;
+  }
+  
+  nav.navbar {
+    background: var(--gradient-primary);
+    display: flex;
+    justify-content: center;
+    padding: clamp(8px, 2vw, 14px) clamp(20px, 5vw, 30px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    user-select: none;
+    position: relative;
+    z-index: 998;
+    transition: all var(--transition);
+  }
+  
+  nav.navbar button.nav-link {
+    background: transparent;
+    border: none;
+    color: #d2ffd1;
+    font-weight: 900;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 2vw, 16px);
+    padding: clamp(8px, 2vw, 12px) clamp(16px, 4vw, 32px);
+    margin: 0 clamp(4px, 1vw, 8px);
+    border-radius: 32px;
+    cursor: pointer;
+    transition: all var(--transition);
+    min-height: 44px;
+    outline: none;
+  }
+  
+  nav.navbar button.nav-link:hover,
+  nav.navbar button.nav-link.active {
+    background: rgba(23, 179, 84, 0.9);
+    color: #ccffd7;
+    transform: translateY(-1px);
+  }
+  
+  nav.navbar button.nav-link svg {
+    width: clamp(20px, 4vw, 24px);
+    height: clamp(20px, 4vw, 24px);
+    flex-shrink: 0;
+  }
+  
+  .nav-toggle {
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    transition: all var(--transition);
+    z-index: 1001;
+  }
+  
+  .nav-toggle:hover {
+    background: rgba(255,255,255,0.2);
+  }
+  
+  /* Mobile Optimizations */
+  @media (max-width: 768px) {
+    .contact-info {
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    
+    .contact-info > div {
+      padding: 4px 8px;
+      font-size: 0.75rem;
+      min-height: 32px;
+    }
+    
+    nav.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #047857, #059669);
+      transform: translateX(-100%);
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9999;
+    }
+    
+    nav.navbar.active {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    nav.navbar button.nav-link {
+      width: 80%;
+      max-width: 300px;
+      margin: 8px 0;
+      padding: 16px 20px;
+      font-size: 1.1rem;
+      border-radius: 16px;
+      text-align: center;
+      justify-content: center;
+      min-height: 56px;
+      background: rgba(255,255,255,0.1);
+    }
+    
+    nav.navbar button.nav-link:hover,
+    nav.navbar button.nav-link.active {
+      background: rgba(255,255,255,0.2);
+      transform: scale(1.02);
+    }
+    
+    .nav-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    body.menu-open {
+      overflow: hidden;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header.site-header {
+      padding: 6px 12px;
+      min-height: 55px;
+    }
+    
+    .contact-info {
+      width: 100%;
+      margin-top: 6px;
+      justify-content: space-between;
+    }
+    
+    .contact-info > div {
+      flex: 1;
+      font-size: 0.7rem;
+      padding: 3px 6px;
+      text-align: center;
+      justify-content: center;
+      min-height: 28px;
+    }
+  }
+  
+  button.enroll-btn {
+    background: var(--gradient-warm);
+    color: var(--white);
+    font-weight: 900;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    padding: clamp(12px, 3vw, 18px) clamp(24px, 6vw, 48px);
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: clamp(12px, 3vw, 20px);
+    transition: all var(--transition);
+    user-select: none;
+    min-height: 48px;
+    outline: none;
+  }
+  
+  button.enroll-btn:hover {
+    background: #fda537;
+    box-shadow: 0 8px 32px rgba(253, 165, 55, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  button.enroll-btn svg {
+    width: clamp(18px, 4vw, 24px);
+    height: clamp(18px, 4vw, 24px);
+    stroke: #fff;
+    stroke-width: 3;
+    fill: none;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    transition: transform var(--transition);
+  }
+  
+  button.enroll-btn:hover svg {
+    transform: translateX(6px);
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: clamp(20px, 5vw, 40px) clamp(16px, 4vw, 24px) clamp(40px, 10vw, 80px);
+    flex-grow: 1;
+  }
+  
+  section.course-section {
+    display: none;
+  }
+  
+  section.course-section.active {
+    display: block;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  h3 {
+    font-weight: 900;
+    font-size: clamp(2rem, 6vw, 3rem);
+    color: var(--light-green);
+    margin-bottom: clamp(20px, 5vw, 40px);
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 3vw, 20px);
+    text-align: center;
+    justify-content: center;
+  }
+  
+  h3 svg {
+    width: clamp(24px, 6vw, 32px);
+    height: clamp(24px, 6vw, 32px);
+  }
+  
+  .course-grid {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 6vw, 40px);
+  }
+  
+  article.course-card {
+    background: var(--white);
+    border-radius: clamp(16px, 4vw, 24px);
+    padding: clamp(20px, 5vw, 32px);
+    border-left: clamp(12px, 3vw, 20px) solid var(--light-green);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+    transition: all var(--transition);
+    user-select: text;
+  }
+  
+  article.course-card:nth-child(2n) {
+    border-left-color: var(--accent-blue);
+  }
+  
+  article.course-card:nth-child(3n) {
+    border-left-color: var(--accent-purple);
+  }
+  
+  article.course-card:hover {
+    box-shadow: 0 24px 60px rgba(0,0,0,0.2);
+    transform: translateY(-4px);
+  }
+  
+  article.course-card h4 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 900;
+    color: var(--dark-green);
+    margin-bottom: clamp(12px, 3vw, 16px);
+    display: flex;
+    align-items: center;
+    gap: clamp(8px, 2vw, 16px);
+  }
+  
+  article.course-card p {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--text-muted);
+    margin-bottom: clamp(12px, 3vw, 20px);
+    line-height: 1.6;
+  }
+  
+  ul.course-features {
+    margin-bottom: clamp(12px, 3vw, 16px);
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  ul.course-features li {
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 1.6;
+    margin-bottom: clamp(8px, 2vw, 12px);
+    position: relative;
+    padding-left: clamp(24px, 6vw, 32px);
+  }
+  
+  ul.course-features li::before {
+    content: "✔";
+    position: absolute;
+    left: clamp(6px, 1.5vw, 8px);
+    top: 0;
+    font-size: clamp(16px, 4vw, 20px);
+    color: var(--light-green);
+  }
+  
+  .course-image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .course-image-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    transition: transform var(--transition);
+    aspect-ratio: 4/3;
+  }
+  
+  .course-image-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .course-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
+  }
+  
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .welcome-section {
+    max-width: 900px;
+    margin: clamp(30px, 8vw, 60px) auto clamp(20px, 5vw, 40px);
+    padding: clamp(30px, 8vw, 60px) clamp(20px, 5vw, 40px);
+    background: var(--gradient-primary);
+    border-radius: clamp(20px, 5vw, 32px);
+    box-shadow: 0 16px 48px rgba(5, 150, 105, 0.3);
+    color: #c9f7d9;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .welcome-section h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: clamp(16px, 4vw, 24px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(16px, 4vw, 24px);
+    flex-wrap: wrap;
+  }
+  
+  .welcome-section h1 img {
+    width: clamp(50px, 10vw, 80px);
+    height: clamp(50px, 10vw, 80px);
+    border-radius: 50%;
+    border: 3px solid #a8dea4;
+    box-shadow: 0 0 24px rgba(173, 223, 168, 0.6);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .welcome-section h1 img:hover {
+    transform: scale(1.1);
+  }
+  
+  .memories-section {
+    background: rgba(230, 255, 230, 0.9);
+    border-radius: 16px;
+    padding: clamp(16px, 4vw, 24px) clamp(20px, 5vw, 32px);
+    max-width: 700px;
+    margin: 0 auto clamp(20px, 5vw, 32px);
+    color: #065f46;
+    text-align: left;
+  }
+  
+  .memories-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 900;
+    color: #059669;
+    margin-bottom: clamp(12px, 3vw, 20px);
+    text-align: center;
+  }
+  
+  .memories-section ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    line-height: 1.6;
+  }
+  
+  .memories-section li {
+    margin-bottom: clamp(10px, 2.5vw, 16px);
+    padding: clamp(8px, 2vw, 12px);
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #10b981;
+  }
+  
+  .memories-section li strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: clamp(1.1rem, 2.8vw, 1.3rem);
+    color: #047857;
+  }
+  
+  .memories-section li em {
+    font-size: clamp(0.85rem, 2.2vw, 1rem);
+    color: #10b981;
+    font-style: italic;
+  }
+  
+  .welcome-section p {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .founder-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: clamp(20px, 5vw, 32px);
+    max-width: 900px;
+    margin: 0 auto clamp(20px, 5vw, 32px);
+    padding: clamp(20px, 5vw, 32px) clamp(16px, 4vw, 24px);
+    background: var(--white);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+    border-radius: clamp(16px, 4vw, 24px);
+  }
+  
+  .founder-profile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: clamp(12px, 3vw, 20px);
+  }
+  
+  .founder-image {
+    width: clamp(80px, 15vw, 120px);
+    height: clamp(80px, 15vw, 120px);
+    flex-shrink: 0;
+  }
+  
+  .founder-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--primary-green);
+    box-shadow: 0 8px 24px rgba(5, 150, 105, 0.3);
+  }
+  
+  .founder-info {
+    flex: 1;
+  }
+  
+  .founder-info h4 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 900;
+    color: var(--dark-green);
+    margin-bottom: clamp(4px, 1vw, 8px);
+  }
+  
+  .founder-info p {
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    color: var(--text-muted);
+    margin-bottom: clamp(8px, 2vw, 12px);
+  }
+  
+  .founder-info .phone-link {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--primary-green);
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    transition: all var(--transition);
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  
+  .founder-info .phone-link:hover {
+    background: rgba(5, 150, 105, 0.1);
+    border-color: var(--primary-green);
+  }
+  
+  .co-founder-profile {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .co-founder-info {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--text-dark);
+    font-weight: 700;
+    user-select: none;
+  }
+  
+  .co-founder-info h4 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 900;
+    color: var(--dark-green);
+    margin-bottom: clamp(4px, 1vw, 8px);
+  }
+  
+  .co-founder-info p {
+    font-size: clamp(0.9rem, 2.2vw, 1.1rem);
+    color: var(--text-muted);
+    margin-bottom: clamp(8px, 2vw, 12px);
+  }
+  
+  .co-founder-info .phone-link {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    color: var(--primary-green);
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid transparent;
+  }
+  
+  .co-founder-info .phone-link:hover {
+    background: rgba(5, 150, 105, 0.1);
+    border-color: var(--primary-green);
+  }
+  
+  .all-images-section {
+    max-width: 1100px;
+    margin: 0 auto clamp(30px, 8vw, 60px);
+  }
+  
+  .all-images-section h3 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 900;
+    color: var(--primary-green);
+    margin-bottom: clamp(20px, 5vw, 40px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .full-image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(16px, 4vw, 24px);
+  }
+  
+  .image-item {
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition);
+  }
+  
+  .image-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-light);
+  }
+  
+  .image-context {
+    padding: clamp(12px, 3vw, 16px);
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 16px 12px 40px;
+    }
+    
+    h3 {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .founder-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 16px;
+      padding: 16px 12px;
+    }
+    
+    .founder-profile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .co-founder-profile {
+      width: 100%;
+    }
+    
+    .course-image-gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    button.enroll-btn {
+      width: 100%;
+      justify-content: center;
+      padding: 12px 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .full-image-gallery {
+      grid-template-columns: 1fr;
+    }
+    
+    .course-image-gallery {
+      grid-template-columns: 1fr;
+    }
+    
+    article.course-card {
+      padding: 16px 12px;
+      border-left-width: 8px;
+    }
+  }
+  
+  img {
+    loading: lazy;
+    decoding: async;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .chart-wrap {
+    width: 100%;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  .chart-wrap canvas {
+    width: 100% !important;
+    height: 300px !important;
+    margin-bottom: 1rem;
+  }
+
+  .chart-caption {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+
+  .chart-table-fallback {
+    display: none;
+  }
+
+  .chart-table-fallback.visible {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  .chart-table-fallback th,
+  .chart-table-fallback td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .chart-tooltip {
+    position: absolute;
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    pointer-events: none;
+    z-index: 100;
+    white-space: nowrap;
+  }
+
+  /* Modal styles */
+  .chart-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+
+  .chart-modal-overlay.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .chart-modal {
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+  }
+
+  .chart-modal-overlay.active .chart-modal {
+    transform: translateY(0);
+  }
+  
+  /* Responsive adjustments for chart modals */
+  @media (max-width: 768px) {
+    .chart-modal {
+      width: 95%;
+      padding: 1.5rem;
+    }
+    
+    .chart-modal-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chart-modal {
+      width: 98%;
+      padding: 1rem;
+    }
+    
+    .chart-close {
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+  }
+
+  .chart-modal canvas {
+    width: 100% !important;
+    height: 400px !important;
+    margin: 1rem 0;
+  }
+
+  .chart-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .chart-close:hover {
+    background: var(--dark-green);
+    transform: scale(1.15) rotate(90deg);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .chart-close:active {
+    transform: scale(0.95);
+  }
+
+  .view-chart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  }
+
+  .view-chart-btn:hover {
+    background: var(--dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+  }
+
+  .view-chart-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
+  }
+
+  .view-chart-btn svg {
+    width: 22px;
+    height: 22px;
+    stroke: currentColor;
+    stroke-width: 2;
+    transition: transform 0.3s ease;
+  }
+  
+  .view-chart-btn:hover svg {
+    transform: translateY(-2px);
+  }
+
+  .chart-modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+  }
+
+  /* Student Results Carousel Styles */
+  .student-results {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .results-title {
+    font-size: 1.25rem;
+    color: var(--dark-green);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .results-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 2rem;
+  }
+
+  .result-cards {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+    padding: 1rem 0;
+  }
+
+  .result-card {
+    flex: 0 0 300px;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+  }
+
+  .result-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .result-card h5 {
+    font-size: 1.1rem;
+    color: var(--dark-green);
+    margin-bottom: 0.5rem;
+  }
+
+  .result-card .school {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .result-card .scores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .result-card .scores span {
+    background: var(--primary-green);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .carousel-prev {
+    left: 0;
+  }
+
+  .carousel-next {
+    right: 0;
+  }
+
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background: var(--dark-green);
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .carousel-prev:active,
+  .carousel-next:active {
+    transform: translateY(-50%) scale(0.95);
+  }
+
+  @media (max-width: 768px) {
+    .result-card {
+      flex: 0 0 280px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .result-card {
+      flex: 0 0 260px;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+      width: 32px;
+      height: 32px;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="top-banner">
+  आपकी सफलता की कहानी की शुरुआत: Sunrise Success Point में स्वागत है।
+</div>
+
+<header class="site-header" role="banner">
+  <div class="logo-container">
+    <img src="storage/image11.jpg" alt="Sunrise Success Point Logo - Leading Educational Institute" width="90" height="90" />
+    <div class="logo-text">SUNRISE SUCCESS POINT</div>
+  </div>
+  <div class="contact-info">
+    <div onclick="callNumber('9953908690')">
+      <svg class="phone-icon" viewBox="0 0 24 24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 18.79 18.79 0 0 1-8.94-2.3m0 0a18.79 18.79 0 0 1-8.94 2.3A2 2 0 0 1 1 19.92v-3a2 2 0 0 1 1-1.73l7-4a2 2 0 0 1 2 0l7 4a2 2 0 0 1 1 1.73z"/>
+        <path d="m9 11 3 3L22 4"/>
+      </svg>Contact: 9953908690
+    </div>
+    <div onclick="callNumber('8076492003')">
+      <svg class="phone-icon" viewBox="0 0 24 24">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 18.79 18.79 0 0 1-8.94-2.3m0 0a18.79 18.79 0 0 1-8.94 2.3A2 2 0 0 1 1 19.92v-3a2 2 0 0 1 1-1.73l7-4a2 2 0 0 1 2 0l7 4a2 2 0 0 1 1 1.73z"/>
+        <path d="m9 11 3 3L22 4"/>
+      </svg>Contact: 8076492003
+    </div>
+  </div>
+</header>
+
+<nav class="navbar" id="mainNav">
+  <button id="academicBtn" class="nav-link active" onclick="showCourseDetails('academic')">
+    <svg width="24" height="24" fill="none" stroke="#0088ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M12 3v18M19 21c-3-1-5-2-7-3-2 1-4 2-7 3V5c3-1 5-2 7-3 2 1 4 2 7 3z"/>
+    </svg>Academic
+  </button>
+  <button class="nav-toggle" onclick="toggleMobileMenu()">☰</button>
+</nav>
+
+<main>
+  <section class="welcome-section">
+    <h1>
+      <img src="storage/image11.jpg" alt="Sunrise Success Point Logo" width="80" height="80" />
+      SUNRISE SUCCESS POINT
+    </h1>
+    <div class="memories-section">
+      <h2>Past Memories of Our Journey</h2>
+      <ul>
+        <li>
+          <strong>First Day Opening (2008)</strong>
+          <em>When we started our journey with just 5 students and big dreams.</em>
+        </li>
+        <li>
+          <strong>First Board Result Success</strong>
+          <em>Celebrating our first batch of 100% pass results in 2010.</em>
+        </li>
+        <li>
+          <strong>IIT JEE First Selection</strong>
+          <em>Proud moment when our first student cracked IIT JEE in 2012.</em>
+        </li>
+        <li>
+          <strong>Foundation Growth Years</strong>
+          <em>Expanding from 1 classroom to our current 3-floor building.</em>
+        </li>
+        <li>
+          <strong>NEET Success Stories</strong>
+          <em>Consistent medical entrance selections bringing smiles to families.</em>
+        </li>
+        <li>
+          <strong>Student Alumni Meetups</strong>
+          <em>Annual gatherings where successful students share their experiences.</em>
+        </li>
+      </ul>
+    </div>
+    <p>आपकी सफलता की गारंटी, विश्वसनीय शिक्षा का केंद्र।</p>
+  </section>
+
+  <section id="academic" class="course-section active">
+    <h3>
+      <svg width="32" height="32" fill="none" stroke="#0088ff" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M12 3v18M19 21c-3-1-5-2-7-3-2 1-4 2-7 3V5c3-1 5-2 7-3 2 1 4 2 7 3z"/>
+      </svg>
+      Academic Courses
+    </h3>
+    <div class="course-grid">
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image1.jpg" alt="Mathematics Class Session" width="180" height="135" />
+            <div class="image-overlay">Interactive Math Classes</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image2.jpg" alt="Science Lab Practical" width="180" height="135" />
+            <div class="image-overlay">Science Lab Sessions</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image3.jpg" alt="Study Resources" width="180" height="135" />
+            <div class="image-overlay">Rich Study Materials</div>
+          </div>
+        </div>
+        <h4>
+          <svg width="32" height="32" fill="none" stroke="#0088ff" stroke-width="2">
+            <path d="M12 3v18M19 21c-3-1-5-2-7-3"/>
+          </svg>
+          Classes 6 to 8
+        </h4>
+        <p>Comprehensive coverage of Mathematics, Science, English, Hindi, and Social Studies with personalized coaching in a supportive learning environment.</p>
+        <ul class="course-features">
+          <li>Concept clarity with practical examples and visual aids</li>
+          <li>Daily doubt clearing sessions with expert teachers</li>
+          <li>Weekly tests and monthly comprehensive assessments</li>
+          <li>Detailed progress reports shared regularly with parents</li>
+          <li>Comprehensive study materials and practice worksheets</li>
+          <li>Interactive learning through modern smart board technology</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image4.jpg" alt="Board Exam Preparation" width="180" height="135" />
+            <div class="image-overlay">Board Exam Focus</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image5.jpg" alt="Achievement Certificates" width="180" height="135" />
+            <div class="image-overlay">Success Stories</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image6.jpg" alt="Advanced Learning" width="180" height="135" />
+            <div class="image-overlay">Advanced Learning</div>
+          </div>
+        </div>
+        <h4>
+          <svg width="32" height="32" fill="none" stroke="#fbbf24" stroke-width="2">
+            <path d="M6 6h12M6 12h12M6 18h6"/>
+          </svg>
+          Classes 9 to 10
+        </h4>
+        <p>Focused preparation aligned to board exams for Science and Math subjects with proven methodology to ensure outstanding results.</p>
+        <ul class="course-features">
+          <li>Targeted coaching in Mathematics, Science, and English</li>
+          <li>Board pattern test series and comprehensive sample papers</li>
+          <li>Mock examinations with detailed performance analysis</li>
+          <li>Regular progress tracking and dedicated parent counseling</li>
+          <li>Proven track record with consistent 95%+ success rate</li>
+          <li>Special intensive crash courses before board examinations</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image7.jpg" alt="Advanced Science Lab" width="180" height="135" />
+            <div class="image-overlay">Advanced Lab Work</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image8.jpg" alt="PCM Classes" width="180" height="135" />
+            <div class="image-overlay">PCM Expertise</div>
+          </div>
+        </div>
+        <h4>
+          <svg width="32" height="32" fill="none" stroke="#22c55e" stroke-width="2">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M7.5 21L3 16.5 12 7.5"/>
+          </svg>
+          Classes 11 to 12
+        </h4>
+        <p>In-depth coaching for Science stream students, combining board preparation with entrance examination coaching for comprehensive success.</p>
+        <ul class="course-features">
+          <li>Complete coverage: Physics, Chemistry, Mathematics, Biology</li>
+          <li>Advanced problem-solving and analytical thinking techniques</li>
+          <li>Integrated approach for boards and competitive entrance exams</li>
+          <li>Personalized mentorship and comprehensive career guidance</li>
+          <li>Regular doubt clearing sessions and collaborative peer learning</li>
+          <li>Advanced laboratory experiments and hands-on practicals</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <section id="foundation" class="course-section">
+    <h3>
+      <svg width="32" height="32" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M12 3L2 7l10 5 10-5z"/>
+      </svg>
+      Foundation Courses
+    </h3>
+    <div class="course-grid">
+      <div class="text-center">
+        <button class="view-chart-btn" onclick="showFoundationChart()">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M8 13v-1m4 1v-3m4 3V8m-8 8l2-2 4 4 4-4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          View Performance Chart
+        </button>
+
+        <!-- Student Results -->
+        <div class="student-results foundation">
+          <h4 class="results-title">Foundation Section (90–94% students)</h4>
+          <div class="results-carousel">
+            <div class="result-cards">
+              <div class="result-card">
+                <h5>Dipti Sinha</h5>
+                <p class="school">Govt. Sarvodaya Kanya Vidyalaya</p>
+                <div class="scores">
+                  <span>Hindi: 95%</span>
+                  <span>Maths: 94%</span>
+                  <span>SST: 89%</span>
+                </div>
+              </div>
+              <!-- More cards will be added dynamically via JavaScript -->
+            </div>
+            <button class="carousel-prev" onclick="slideFoundationResults('prev')">&lt;</button>
+            <button class="carousel-next" onclick="slideFoundationResults('next')">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Foundation Chart Modal -->
+      <div id="foundationChartModal" class="chart-modal-overlay">
+        <div class="chart-modal">
+          <h4 class="chart-modal-title">Foundation Programs Performance Analysis</h4>
+          <button class="chart-close" onclick="closeFoundationChart()">&times;</button>
+          <canvas id="foundationChart" aria-label="Foundation programs comparative chart" role="img"></canvas>
+          <div class="chart-table-fallback" aria-hidden="true"></div>
+        </div>
+      </div>
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image9.jpg" alt="IIT JEE Foundation" width="180" height="135" />
+            <div class="image-overlay">IIT Foundation</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image10.jpg" alt="Problem Solving" width="180" height="135" />
+            <div class="image-overlay">Problem Solving</div>
+          </div>
+        </div>
+        <h4>IIT JEE Foundation Classes 8-10</h4>
+        <p>Building strong fundamentals and problem-solving skills for future IIT JEE aspirants with comprehensive Mathematics and Science foundation.</p>
+        <ul class="course-features">
+          <li>Advanced problem-solving techniques and logical reasoning development</li>
+          <li>Comprehensive performance analysis through regular mock tests</li>
+          <li>Speed building exercises and effective time management strategies</li>
+          <li>Regular motivational workshops featuring success stories</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image11.jpg" alt="NTSE Preparation" width="180" height="135" />
+            <div class="image-overlay">Scholarship Focus</div>
+          </div>
+        </div>
+        <h4>NTSE & KVPY Preparation</h4>
+        <p>Focused scholarship examination coaching with comprehensive interview preparation and dedicated career counseling.</p>
+        <ul class="course-features">
+          <li>Expert mentorship specifically for competitive scholarship examinations</li>
+          <li>Comprehensive career guidance and strategic future planning</li>
+          <li>Mock interviews and personality development training sessions</li>
+          <li>Extensive question bank with previous years' solved papers</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image12.jpg" alt="Olympiad Training" width="180" height="135" />
+            <div class="image-overlay">Olympiad Excellence</div>
+          </div>
+        </div>
+        <h4>Olympiad Training</h4>
+        <p>Developing logical and critical thinking abilities for international level competitions through innovative teaching methodologies.</p>
+        <ul class="course-features">
+          <li>Regular mock Olympiad examinations and comprehensive assessments</li>
+          <li>International competition preparation strategies and techniques</li>
+          <li>Creative problem-solving workshops and analytical thinking sessions</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <section id="competitive" class="course-section">
+    <h3>
+      <svg width="32" height="32" fill="none" stroke="#22c55e" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+        <circle cx="12" cy="8" r="4"/>
+        <path d="M7.5 21L3 16.5 12 7.5"/>
+      </svg>
+      Competitive Courses
+    </h3>
+    <div class="course-grid">
+      <div class="text-center">
+        <button class="view-chart-btn" onclick="showCompetitiveChart()">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          View Success Rate Chart
+        </button>
+
+        <!-- Student Results -->
+        <div class="student-results competitive">
+          <h4 class="results-title">Competitive Section (Top Achievers – 95%+)</h4>
+          <div class="results-carousel">
+            <div class="result-cards">
+              <div class="result-cards">
+              <!-- Foundation student cards will be populated by JavaScript -->
+            </div>
+            <button class="carousel-prev" onclick="slideFoundationResults('prev')">&lt;</button>
+            <button class="carousel-next" onclick="slideFoundationResults('next')">&gt;</button>
+            </div>
+            <button class="carousel-prev" onclick="slideCompetitiveResults('prev')">&lt;</button>
+            <button class="carousel-next" onclick="slideCompetitiveResults('next')">&gt;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Competitive Chart Modal -->
+      <div id="competitiveChartModal" class="chart-modal-overlay">
+        <div class="chart-modal">
+          <h4 class="chart-modal-title">Competitive Exams Success Rate Analysis</h4>
+          <button class="chart-close" onclick="closeCompetitiveChart()">&times;</button>
+          <canvas id="competitiveChart" aria-label="Competitive exams success rate chart" role="img"></canvas>
+          <div class="chart-table-fallback" aria-hidden="true"></div>
+        </div>
+      </div>
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image1.jpg" alt="JEE Main Success" width="180" height="135" />
+            <div class="image-overlay">JEE Success</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image2.jpg" alt="IIT Selection" width="180" height="135" />
+            <div class="image-overlay">IIT Dreams</div>
+          </div>
+        </div>
+        <h4>JEE Main & Advanced</h4>
+        <p>Complete IIT JEE syllabus coverage with deep Physics, Chemistry, and Mathematics expertise, comprehensive test series and admission guidance.</p>
+        <ul class="course-features">
+          <li>Comprehensive All India Test Series with detailed performance analysis</li>
+          <li>Personalized mentoring with individual attention and guidance</li>
+          <li>College admission counseling and selection strategy support</li>
+          <li>Advanced problem-solving techniques and efficient shortcuts</li>
+          <li>Regular doubt clearing sessions and collaborative peer discussions</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image3.jpg" alt="NEET Biology" width="180" height="135" />
+            <div class="image-overlay">Biology Excellence</div>
+          </div>
+          <div class="course-image-item">
+            <img src="storage/image4.jpg" alt="Medical Success" width="180" height="135" />
+            <div class="image-overlay">Medical Dreams</div>
+          </div>
+        </div>
+        <h4>NEET Preparation</h4>
+        <p>Complete mastery of Biology, Physics, and Chemistry with conceptual clarity and proven high success rate in medical entrance examinations.</p>
+        <ul class="course-features">
+          <li>CBSE and state board aligned comprehensive curriculum structure</li>
+          <li>Repeated evaluation and continuous performance tracking system</li>
+          <li>Extensive biology practicals and advanced laboratory sessions</li>
+          <li>Medical career guidance and comprehensive counseling support</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+      
+      <article class="course-card">
+        <div class="course-image-gallery">
+          <div class="course-image-item">
+            <img src="storage/image5.jpg" alt="State Level Exams" width="180" height="135" />
+            <div class="image-overlay">State Exam Focus</div>
+          </div>
+        </div>
+        <h4>State Level Entrance Exams</h4>
+        <p>Specialized preparation for state engineering and medical entrance examinations with bilingual support and affordable fee structure.</p>
+        <ul class="course-features">
+          <li>Comprehensive test series specifically designed for state level examinations</li>
+          <li>Bilingual teaching support in both Hindi and English languages</li>
+          <li>Affordable fee structure with flexible payment plan options</li>
+          <li>Dedicated career counseling and strategic college selection guidance</li>
+        </ul>
+        <button class="enroll-btn" onclick="openWhatsApp()">
+          Enroll Now
+          <svg viewBox="0 0 24 24" stroke-width="3" stroke="white">
+            <path d="M5 12h14"/>
+            <path d="M13 6l6 6-6 6"/>
+          </svg>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- WhatsApp Float Button -->
+  <div class="whatsapp-float">
+    <button class="whatsapp-button" aria-label="Contact on WhatsApp">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-8.6 14.9L2 22l5.3-1.4A10 10 0 1 0 12 2m0 1.8a8.1 8.1 0 0 1 8.2 8.2 8.1 8.1 0 0 1-8.2 8.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.1 8.1 0 0 1 12 3.8M8.6 7.4c-.2 0-.4 0-.6.1h-.4c-.3.1-.6.5-.8.9-.4.7-.3 1.6.3 2.5.6.9 1.6 2.2 3.5 3.5 2.3 1.7 4.4 2 5.4 2.2.8.1 1.8 0 2.5-.4.5-.2.8-.5 1-.9.1-.2.2-.4.2-.6 0-.2 0-.3-.1-.4l-.5-.2-2-1c-.2 0-.3 0-.5.2l-.8 1c-.1.2-.3.2-.5.1a9 9 0 0 1-4.3-3.8c-.1-.2-.1-.4 0-.5l.8-1c.1-.1.1-.3.1-.4l-1-2.1-.2-.5c0-.2-.2-.2-.4-.2"/>
+      </svg>
+    </button>
+    <div class="whatsapp-popup">
+      <!-- Popup content removed -->
+    </div>
+  </div>
+
+  <section class="founder-section">
+    <div class="founder-profile">
+      <div class="founder-image">
+        <img src="storage/image12.jpg" alt="Markandev Pandey - Founder" width="120" height="120" />
+      </div>
+      <div class="founder-info">
+        <h4>Markandev Pandey <small>(Founder)</small></h4>
+        <p>Expert in advanced Mathematics and competitive exam coaching with 15+ years of dedicated experience in transforming students' academic careers.</p>
+        <div class="phone-link" onclick="callNumber('9953908690')">Call: 9953908690</div>
+      </div>
+    </div>
+    
+    <div class="co-founder-profile">
+      <div class="founder-profile">
+        <div class="founder-image">
+          <img src="storage/image13.jpg" alt="Shivani Pandey - Co-founder" width="120" height="120" />
+        </div>
+        <div class="founder-info">
+          <h4>Shivani Pandey <small>(Co-founder)</small></h4>
+          <p>Dedicated to providing quality education and comprehensive student mentorship with expertise in student counseling and career guidance.</p>
+          <div class="phone-link" onclick="callNumber('8076492003')">Call: 8076492003</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="all-images-section">
+    <h3>
+      <svg width="32" height="32" fill="none" stroke="#059669" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M14.828 14.828a4 4 0 0 1-5.656 0M9 10h1m4 0h1"/>
+        <path d="M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8Z"/>
+      </svg>
+      Our Institute Gallery
+    </h3>
+    <div class="full-image-gallery">
+      <div class="image-item">
+        <img src="storage/image1.jpg" alt="Modern interactive classrooms" width="280" height="200" />
+        <div class="image-context">Modern interactive classrooms equipped with the latest educational technology including smart boards, digital projectors, and ergonomic seating arrangements specifically designed to enhance the learning experience and promote active student participation.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image2.jpg" alt="Student achievements and success" width="280" height="200" />
+        <div class="image-context">Proud display of our students' remarkable achievements in board examinations, competitive entrance tests, and scholarship programs. These success stories reflect our commitment to excellence and the trust families place in our institute.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image3.jpg" alt="Comprehensive library resources" width="280" height="200" />
+        <div class="image-context">Well-organized library and resource center with an extensive collection of textbooks, reference materials, practice papers, previous years' question banks, and comprehensive study guides covering all subjects from foundation to advanced levels.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image4.jpg" alt="Science laboratory facilities" width="280" height="200" />
+        <div class="image-context">State-of-the-art science laboratories equipped with modern instruments and apparatus for Physics, Chemistry, and Biology practicals. Students gain hands-on experience through guided experiments and innovative learning methodologies.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image5.jpg" alt="Faculty and teaching staff" width="280" height="200" />
+        <div class="image-context">Our experienced and dedicated faculty members who bring years of expertise in their respective subjects. With personalized attention, innovative teaching methodologies, and deep understanding of student psychology, they guide each student towards academic excellence.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image6.jpg" alt="Student activities and events" width="280" height="200" />
+        <div class="image-context">Regular academic events, competitions, seminars, and workshops designed to enhance students' overall development. These activities foster creativity, leadership skills, and collaborative learning among our student community.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image7.jpg" alt="Study halls and learning spaces" width="280" height="200" />
+        <div class="image-context">Spacious and well-ventilated study halls providing a conducive environment for focused learning. These dedicated spaces are designed to minimize distractions and maximize concentration for effective study sessions.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image8.jpg" alt="Computer and digital learning" width="280" height="200" />
+        <div class="image-context">Modern computer laboratory with high-speed internet connectivity for digital learning, online test series, and educational software. Students access the latest educational resources and practice platforms for comprehensive preparation.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image9.jpg" alt="Result announcements and celebrations" width="280" height="200" />
+        <div class="image-context">Joyous moments during result announcements when our students achieve their dreams. These celebration gatherings strengthen the bond between students, parents, and our institute family, marking successful milestones in academic journeys.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image10.jpg" alt="Parent-teacher meetings" width="280" height="200" />
+        <div class="image-context">Regular parent-teacher interaction sessions ensuring transparent communication about student progress. These meetings facilitate collaborative efforts between home and institute for the holistic development of each student.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image11.jpg" alt="Institute building and infrastructure" width="280" height="200" />
+        <div class="image-context">Our magnificent three-floor institute building showcasing modern infrastructure, spacious corridors, and well-planned layout. The building represents our growth journey from a single classroom to a comprehensive educational institution.</div>
+      </div>
+      <div class="image-item">
+        <img src="storage/image12.jpg" alt="Founder and leadership team" width="280" height="200" />
+        <div class="image-context">Leadership team led by our founder Markandev Pandey and co-founder Shivani Pandey, whose vision and dedication have shaped Sunrise Success Point into a trusted name in quality education and student success over the past 15+ years.</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+  const callNumber = (num) => {
+    window.open('tel:' + num, '_self');
+  };
+  
+  const openWhatsApp = () => {
+    const msg = encodeURIComponent("नमस्ते! मैं Sunrise Success Point के बारे में जानकारी चाहता हूँ। कृपया संपर्क करें।");
+    window.open(`https://wa.me/919953908690?text=${msg}`, '_blank');
+  };
+  
+  const showCourseDetails = (course) => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('button.nav-link').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      document.querySelectorAll('section.course-section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      
+      const activeBtn = document.getElementById(course + 'Btn');
+      const activeSec = document.getElementById(course);
+      
+      if(activeBtn && activeSec) {
+        activeBtn.classList.add('active');
+        activeSec.classList.add('active');
+      }
+      
+      closeMobileMenu();
+    });
+  };
+  
+  const toggleMobileMenu = () => {
+    const nav = document.querySelector('nav.navbar');
+    const body = document.body;
+    
+    if(nav.classList.contains('active')) {
+      closeMobileMenu();
+    } else {
+      nav.classList.add('active');
+      body.classList.add('menu-open');
+    }
+  };
+  
+  const closeMobileMenu = () => {
+    const nav = document.querySelector('nav.navbar');
+    const body = document.body;
+    
+    nav.classList.remove('active');
+    body.classList.remove('menu-open');
+  };
+  
+  document.addEventListener('click', (e) => {
+    const nav = document.querySelector('nav.navbar');
+    const toggleBtn = document.querySelector('.nav-toggle');
+    
+    if(window.innerWidth <= 768 && nav.classList.contains('active')) {
+      if(!nav.contains(e.target) && !toggleBtn.contains(e.target)) {
+        closeMobileMenu();
+      }
+      
+      if(e.target.classList.contains('nav-link') || e.target.closest('.nav-link')) {
+        setTimeout(closeMobileMenu, 200);
+      }
+    }
+  });
+  
+  window.addEventListener('resize', () => {
+    if(window.innerWidth > 768) {
+      closeMobileMenu();
+    }
+  });
+
+  // Chart Modal Functions
+  function showFoundationChart() {
+    const modal = document.getElementById('foundationChartModal');
+    if (!modal) {
+      console.error('Foundation chart modal not found');
+      return;
+    }
+    
+    const canvas = document.getElementById('foundationChart');
+    if (!canvas) {
+      console.error('Foundation chart canvas not found');
+      return;
+    }
+
+    // Show modal with animation
+    modal.style.display = 'flex';
+    // Trigger reflow
+    void modal.offsetWidth;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Always redraw the chart when showing modal
+    try {
+      drawFoundationBarChart();
+    } catch (err) {
+      console.error('Error drawing foundation chart:', err);
+    }
+  }
+
+  function closeFoundationChart() {
+    const modal = document.getElementById('foundationChartModal');
+    modal.classList.remove('active');
+    
+    // Wait for animation to complete before hiding
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300); // Match transition duration
+  }
+
+  function showCompetitiveChart() {
+    const modal = document.getElementById('competitiveChartModal');
+    if (!modal) {
+      console.error('Competitive chart modal not found');
+      return;
+    }
+    
+    const canvas = document.getElementById('competitiveChart');
+    if (!canvas) {
+      console.error('Competitive chart canvas not found');
+      return;
+    }
+
+    // Show modal with animation
+    modal.style.display = 'flex';
+    // Trigger reflow
+    void modal.offsetWidth;
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Always redraw the chart when showing modal
+    try {
+      drawCompetitivePieChart();
+    } catch (err) {
+      console.error('Error drawing competitive chart:', err);
+    }
+  }
+
+  function closeCompetitiveChart() {
+    const modal = document.getElementById('competitiveChartModal');
+    modal.classList.remove('active');
+    
+    // Wait for animation to complete before hiding
+    setTimeout(() => {
+      modal.style.display = 'none';
+      document.body.style.overflow = '';
+    }, 300); // Match transition duration
+  }
+
+  // Close modals when clicking outside
+  document.querySelectorAll('.chart-modal-overlay').forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        
+        // Wait for animation to complete before hiding
+        setTimeout(() => {
+          modal.style.display = 'none';
+          document.body.style.overflow = '';
+        }, 300); // Match transition duration
+      }
+    });
+  });
+
+  // Close modals with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.chart-modal-overlay').forEach(modal => {
+        if (modal.classList.contains('active')) {
+          modal.classList.remove('active');
+          
+          // Wait for animation to complete before hiding
+          setTimeout(() => {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+          }, 300); // Match transition duration
+        }
+
+
+      });
+    }
+  });
+  
+  document.addEventListener('keydown', (e) => {
+    const nav = document.querySelector('nav.navbar');
+    
+    if(e.key === 'Escape' && nav.classList.contains('active')) {
+      closeMobileMenu();
+      document.querySelector('.nav-toggle').focus();
+    }
+  });
+  
+  // Chart data and functions
+  function drawFoundationBarChart() {
+    const canvas = document.getElementById('foundationChart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 400;
+
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Data
+    const data = [
+      { label: "IIT JEE Foundation", value: 85, color: "#0088ff" },
+      { label: "NTSE & KVPY", value: 78, color: "#059669" },
+      { label: "Olympiad", value: 72, color: "#7c3aed" }
+    ];
+
+    // Draw background
+    ctx.fillStyle = '#f8fafc';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Calculate dimensions
+    const padding = 60;
+    const barWidth = (canvas.width - (padding * 2) - ((data.length - 1) * 20)) / data.length;
+    const maxBarHeight = canvas.height - padding * 2;
+
+    // Draw grid lines and labels
+    ctx.strokeStyle = '#e2e8f0';
+    ctx.fillStyle = '#64748b';
+    ctx.textAlign = 'right';
+    ctx.font = '12px system-ui';
+
+    for (let i = 0; i <= 100; i += 20) {
+      const y = canvas.height - padding - (maxBarHeight * i / 100);
+      ctx.beginPath();
+      ctx.moveTo(padding, y);
+      ctx.lineTo(canvas.width - padding, y);
+      ctx.stroke();
+      ctx.fillText(i + '%', padding - 5, y + 4);
+    }
+
+    // Draw bars with animation
+    let currentHeight = 0;
+    const targetHeight = 1;
+    const animate = () => {
+      currentHeight = Math.min(currentHeight + 0.05, targetHeight);
+      
+      data.forEach((item, index) => {
+        const x = padding + index * (barWidth + 20);
+        const barHeight = maxBarHeight * (item.value / 100) * currentHeight;
+        const y = canvas.height - padding - barHeight;
+
+        // Draw bar
+        ctx.fillStyle = item.color;
+        ctx.fillRect(x, canvas.height - padding - barHeight, barWidth, barHeight);
+
+        // Draw label
+        ctx.fillStyle = '#1f2937';
+        ctx.textAlign = 'center';
+        ctx.font = '12px system-ui';
+        ctx.fillText(item.label, x + barWidth / 2, canvas.height - padding + 20);
+
+        // Draw value
+        if (currentHeight === targetHeight) {
+          ctx.fillStyle = '#1f2937';
+          ctx.fillText(item.value + '%', x + barWidth / 2, y - 10);
+        }
+      });
+
+      if (currentHeight < targetHeight) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    animate();
+  }
+
+  function drawCompetitivePieChart() {
+    const canvas = document.getElementById('competitiveChart');
+    if (!canvas) return;
+
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 400;
+
+    // Student data for top achievers (95%+)
+    const students = [
+      { name: "Khushi Anand", school: "Bosco Pub. Sr. Sec. School", scores: { Maths: 95, Science: 95, Social: 97, English: 95, Hindi: 99 } },
+      { name: "Anand Prajapati", school: "New Jeevan Mission School", scores: { Science: 99, Social: 99, English: 91, Hindi: 98 } },
+      { name: "Sachin", school: "L.L. Col. Mahir Little Angels Sr. Sec. School", scores: { "Info Tech": 100, Maths: 92, Social: 94, English: 90 } },
+      { name: "Adarsh Kr. Thakur", school: "Kendriya Vidyalaya", scores: { Maths: 95, Social: 91 } },
+      { name: "Harman Singh", school: "Richmond Global School", scores: { Maths: 95, Science: 94, Social: 92, English: 87 } },
+      { name: "Rehan Akhtar", school: "Richmond Global School", scores: { Maths: 97, Social: 91 } },
+      { name: "Nisha Singh", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { History: 91, "Political Science": 93 } }
+    ];
+
+    // Collect all unique subjects
+    const allSubjects = new Set();
+    students.forEach(student => {
+      Object.keys(student.scores).forEach(subject => {
+        allSubjects.add(subject);
+      });
+    });
+    
+    // Convert to array and sort alphabetically
+    const subjects = Array.from(allSubjects).sort();
+    
+    // Colors for the bars
+    const colors = ['#059669', '#0088ff', '#7c3aed', '#f97316', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6'];
+    
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#f8fafc';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Calculate dimensions
+    const padding = { top: 30, right: 20, bottom: 60, left: 60 };
+    const chartWidth = canvas.width - padding.left - padding.right;
+    const chartHeight = canvas.height - padding.top - padding.bottom;
+    
+    // Calculate bar width and spacing
+    const barWidth = chartWidth / subjects.length * 0.7;
+    const barSpacing = chartWidth / subjects.length * 0.3;
+    
+    // Draw axes
+    ctx.strokeStyle = '#64748b';
+    ctx.lineWidth = 1;
+    
+    // Y-axis
+    ctx.beginPath();
+    ctx.moveTo(padding.left, padding.top);
+    ctx.lineTo(padding.left, canvas.height - padding.bottom);
+    ctx.stroke();
+    
+    // X-axis
+    ctx.beginPath();
+    ctx.moveTo(padding.left, canvas.height - padding.bottom);
+    ctx.lineTo(canvas.width - padding.right, canvas.height - padding.bottom);
+    ctx.stroke();
+    
+    // Draw grid lines and labels for Y-axis
+    ctx.fillStyle = '#64748b';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'middle';
+    ctx.font = '12px system-ui';
+    
+    for (let i = 0; i <= 100; i += 10) {
+      const y = canvas.height - padding.bottom - (i / 100) * chartHeight;
+      
+      // Grid line
+      ctx.strokeStyle = '#e2e8f0';
+      ctx.beginPath();
+      ctx.moveTo(padding.left, y);
+      ctx.lineTo(canvas.width - padding.right, y);
+      ctx.stroke();
+      
+      // Label
+      ctx.fillStyle = '#64748b';
+      ctx.fillText(i + '%', padding.left - 5, y);
+    }
+    
+    // Animation properties
+    let animationProgress = 0;
+    const animationDuration = 1000; // 1 second
+    const startTime = performance.now();
+    
+    function render(currentTime) {
+      // Calculate animation progress
+      animationProgress = Math.min((currentTime - startTime) / animationDuration, 1);
+      
+      // Clear chart area (not the whole canvas)
+      ctx.clearRect(padding.left, padding.top, chartWidth, chartHeight);
+      
+      // Draw bars for each subject
+      subjects.forEach((subject, index) => {
+        // Calculate average score for this subject
+        let totalScore = 0;
+        let count = 0;
+        
+        students.forEach(student => {
+          if (student.scores[subject]) {
+            totalScore += student.scores[subject];
+            count++;
+      // Continue animation if not complete
+      if (animationProgress < 1) {
+        requestAnimationFrame(render);
+      }
+    }
+    
+    // Start animation
+    requestAnimationFrame(render);
+        
+        const averageScore = count > 0 ? totalScore / count : 0;
+        
+        // Calculate bar height based on animation progress
+        const barHeight = (averageScore / 100) * chartHeight * animationProgress;
+        
+        // Calculate bar position
+        const x = padding.left + (index * (barWidth + barSpacing)) + barSpacing/2;
+        const y = canvas.height - padding.bottom - barHeight;
+        
+        // Draw bar
+        ctx.fillStyle = colors[index % colors.length];
+        ctx.fillRect(x, y, barWidth, barHeight);
+        
+        // Draw subject label
+        ctx.save();
+        ctx.translate(x + barWidth/2, canvas.height - padding.bottom + 10);
+        ctx.rotate(Math.PI / 4); // Rotate text for better fit
+        ctx.textAlign = 'left';
+        ctx.fillStyle = '#1f2937';
+        ctx.font = '12px system-ui';
+        ctx.fillText(subject, 0, 0);
+        ctx.restore();
+        
+        // Draw score on top of bar
+        if (animationProgress === 1) {
+          ctx.textAlign = 'center';
+          ctx.fillStyle = '#1f2937';
+          ctx.fillText(averageScore.toFixed(1) + '%', x + barWidth/2, y - 10);
+        }
+      });
+      
+      // Draw chart title
+      ctx.textAlign = 'center';
+      ctx.fillStyle = '#1f2937';
+      ctx.font = 'bold 14px system-ui';
+      ctx.fillText('Subject-wise Average Scores', canvas.width / 2, padding.top / 2);
+      
+      // Continue animation if not complete
+      if (animationProgress < 1) {
+        requestAnimationFrame(render);
+      }
+    }
+    
+    // Start animation
+    requestAnimationFrame(render);
+  }
+
+  // Wait for DOM to load
+  // Initialize result cards
+  function initializeResultCards() {
+    const foundationCards = document.querySelector('.foundation .result-cards');
+    const competitiveCards = document.querySelector('.competitive .result-cards');
+    
+    foundationStudents.forEach(student => {
+      const card = createStudentCard(student);
+      foundationCards.appendChild(card);
+    });
+    
+    competitiveStudents.forEach(student => {
+      const card = createStudentCard(student);
+      competitiveCards.appendChild(card);
+    });
+  }
+
+  function createStudentCard(student) {
+    const card = document.createElement('div');
+    card.className = 'result-card';
+    card.innerHTML = `
+      <h5>${student.name}</h5>
+      <p class="school">${student.school}</p>
+      <div class="scores">
+        ${Object.entries(student.scores)
+          .map(([subject, score]) => `<span>${subject}: ${score}%</span>`)
+          .join('')}
+      </div>
+    `;
+    return card;
+  }
+
+  // Carousel functions
+  let foundationPosition = 0;
+  let competitivePosition = 0;
+
+  function slideResults(section, direction) {
+    const container = document.querySelector(`.${section} .result-cards`);
+    const cards = container.children;
+    const cardWidth = cards[0].offsetWidth + 16; // Including gap
+    const maxPosition = -(cards.length * cardWidth - container.offsetWidth);
+    
+    if (section === 'foundation') {
+      foundationPosition += direction === 'next' ? -cardWidth : cardWidth;
+      foundationPosition = Math.max(Math.min(foundationPosition, 0), maxPosition);
+      container.style.transform = `translateX(${foundationPosition}px)`;
+    } else {
+      competitivePosition += direction === 'next' ? -cardWidth : cardWidth;
+      competitivePosition = Math.max(Math.min(competitivePosition, 0), maxPosition);
+      container.style.transform = `translateX(${competitivePosition}px)`;
+    }
+  }
+
+  function slideFoundationResults(direction) {
+    slideResults('foundation', direction);
+  }
+
+  function slideCompetitiveResults(direction) {
+    slideResults('competitive', direction);
+  }
+
+  // WhatsApp functionality
+  const whatsappButton = document.querySelector('.whatsapp-button');
+  const whatsappPopup = document.querySelector('.whatsapp-popup');
+  const whatsappClose = document.querySelector('.whatsapp-close');
+  const whatsappOptions = document.querySelectorAll('.whatsapp-option');
+  
+  whatsappButton?.addEventListener('click', () => {
+    whatsappPopup.classList.toggle('active');
+  });
+  
+  whatsappClose?.addEventListener('click', () => {
+    whatsappPopup.classList.remove('active');
+  });
+  
+  whatsappOptions?.forEach(option => {
+    option.addEventListener('click', () => {
+      const text = encodeURIComponent(option.textContent);
+      window.open(`https://wa.me/919953908690?text=${text}`, '_blank');
+    });
+  });
+
+  window.addEventListener('load', function() {
+    // Set initial active section
+    showCourseDetails('academic');
+    
+    // Initialize result cards
+    initializeResultCards();
+    
+    // Preload critical images
+    const criticalImages = ['storage/image11.jpg', 'storage/image12.jpg', 'storage/image13.jpg'];
+    criticalImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+
+    // Add resize handlers for charts
+    window.addEventListener('resize', () => {
+      const foundationModal = document.getElementById('foundationChartModal');
+      const competitiveModal = document.getElementById('competitiveChartModal');
+      
+      if (foundationModal.classList.contains('active')) {
+        drawFoundationBarChart();
+      }
+      if (competitiveModal.classList.contains('active')) {
+        drawCompetitivePieChart();
+      }
+    });
+
+    // Initialize chart modals
+    const foundationModal = document.getElementById('foundationChartModal');
+    const competitiveModal = document.getElementById('competitiveChartModal');
+
+    // Handle modal clicks
+    foundationModal.addEventListener('click', (e) => {
+      if (e.target === foundationModal) {
+        closeFoundationChart();
+      }
+    });
+
+    competitiveModal.addEventListener('click', (e) => {
+      if (e.target === competitiveModal) {
+        closeCompetitiveChart();
+      }
+    });
+  });
+<div class="whatsapp-float">
+  <button class="whatsapp-button">WhatsApp</button>
+  <div class="whatsapp-popup">
+    <button class="whatsapp-close">×</button>
+    <button class="whatsapp-option">Hello, I want admission details.</button>
+    <button class="whatsapp-option">Please share coaching fee structure.</button>
+    <!-- aur options -->
+  </div>
+</div>
+
+  // Student Data
+  const foundationStudents = [
+    { name: "Dipti Sinha", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { Hindi: 95, Maths: 94, SST: 89 } },
+    { name: "Raveena Kumari", school: "Doon Public School", scores: { Maths: 95, SST: 92 } },
+    { name: "Md Abdul Aziz", school: "Govt. Boys Sec. School", scores: { Hindi: 91, Maths: 94, SST: 91 } },
+    { name: "Faiz Ahmed", school: "Rajindra Public School", scores: { Maths: 92 } },
+    { name: "Sahil Khan", school: "Kendriya Vidyalaya", scores: { Maths: 92 } },
+    { name: "Gurpreet Kaur", school: "Rajindra Public School", scores: { English: 91 } },
+    { name: "Niharika", school: "Rajindra Public School", scores: { Science: 91 } },
+    { name: "Akash Gautam", school: "Rajindra Public School", scores: { Maths: 93 } },
+    { name: "Ravi Yadav", school: "Guru Sharan Convent School", scores: { Maths: 90.5, Science: 92.5 } },
+    { name: "Anurag Chaurasia", school: "Guru Sharan Convent School", scores: { Maths: 92.5, SST: 94 } },
+    { name: "Piyush Verma", school: "Richmond Global School", scores: { "Info Technology": 100 } },
+    { name: "Azim Khan", school: "Kendriya Vidyalaya", scores: { Science: 93 } },
+    { name: "Abhinav", school: "Kendriya Vidyalaya", scores: { Science: 95 } },
+    { name: "Jay Kumar", school: "Kendriya Vidyalaya", scores: { Maths: 93, Science: 95, SST: 88 } },
+    { name: "Harshit", school: "Sunriser's Success Point", scores: { Maths: 95, Science: 95, Social: 96, English: 93 } }
+  ];
+
+  const competitiveStudents = [
+    { name: "Khushi Anand", school: "Bosco Pub. Sr. Sec. School", scores: { Maths: 95, Science: 95, Social: 97, English: 95, Hindi: 99 } },
+    { name: "Anand Prajapati", school: "New Jeevan Mission School", scores: { Science: 99, Social: 99, English: 91, Hindi: 98 } },
+    { name: "Sachin", school: "L.L. Col. Mahir Little Angels Sr. Sec. School", scores: { "Info Tech": 100, Maths: 92, Social: 94, English: 90 } },
+    { name: "Adarsh Kr. Thakur", school: "Kendriya Vidyalaya", scores: { Maths: 95, Social: 91 } },
+    { name: "Harman Singh", school: "Richmond Global School", scores: { Maths: 95, Science: 94, Social: 92, English: 87 } },
+    { name: "Rehan Akhtar", school: "Richmond Global School", scores: { Maths: 97, Social: 91 } },
+    { name: "Nisha Singh", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { History: 91, "Political Science": 93 } }
+  ];
+
+  // Foundation Bar Chart
+  const drawFoundationBarChart = () => {
+    const canvas = document.getElementById('foundationBarChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const tooltip = canvas.parentElement.querySelector('.chart-tooltip');
+    
+    // Data for foundation courses
+    const data = [
+      { label: 'IIT JEE Foundation', value: 85, color: '#059669' },
+      { label: 'NTSE & KVPY', value: 78, color: '#0088ff' },
+      { label: 'Olympiad', value: 72, color: '#7c3aed' }
+    ];
+    
+    const drawBackground = () => {
+      ctx.fillStyle = '#f8fafc';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    };
+    
+    const drawAxes = () => {
+      ctx.beginPath();
+      ctx.strokeStyle = '#64748b';
+      ctx.lineWidth = 2;
+      
+      // Y-axis
+      ctx.moveTo(50, 30);
+      ctx.lineTo(50, canvas.height - 30);
+      
+      // X-axis
+      ctx.moveTo(50, canvas.height - 30);
+      ctx.lineTo(canvas.width - 30, canvas.height - 30);
+      
+      ctx.stroke();
+    };
+    
+    const drawGridlines = () => {
+      ctx.beginPath();
+      ctx.strokeStyle = '#e2e8f0';
+      ctx.lineWidth = 1;
+      
+      for(let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 30 - ((canvas.height - 60) * i / 100);
+        ctx.moveTo(50, y);
+        ctx.lineTo(canvas.width - 30, y);
+      }
+      ctx.stroke();
+    };
+    
+    const drawLabels = () => {
+      ctx.fillStyle = '#1f2937';
+      ctx.font = '12px system-ui';
+      ctx.textAlign = 'right';
+      
+      for(let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 30 - ((canvas.height - 60) * i / 100);
+        ctx.fillText(i + '%', 45, y + 4);
+      }
+      
+      ctx.textAlign = 'center';
+      months.forEach((month, i) => {
+        const x = 80 + (i * ((canvas.width - 110) / (months.length - 1)));
+        ctx.fillText(month, x, canvas.height - 10);
+      });
+    };
+    
+    const drawData = () => {
+      ctx.beginPath();
+      ctx.strokeStyle = '#059669';
+      ctx.lineWidth = 3;
+      
+      scores.forEach((score, i) => {
+        const x = 80 + (i * ((canvas.width - 110) / (scores.length - 1)));
+        const y = canvas.height - 30 - ((canvas.height - 60) * score / 100);
+        
+        if(i === 0) {
+          ctx.moveTo(x, y);
+        } else {
+          ctx.lineTo(x, y);
+        }
+      });
+      ctx.stroke();
+      
+      // Draw points
+      scores.forEach((score, i) => {
+        const x = 80 + (i * ((canvas.width - 110) / (scores.length - 1)));
+        const y = canvas.height - 30 - ((canvas.height - 60) * score / 100);
+        
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI * 2);
+        ctx.fillStyle = '#059669';
+        ctx.fill();
+        ctx.strokeStyle = 'white';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+      });
+    };
+    
+    // Handle tooltip
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      scores.forEach((score, i) => {
+        const pointX = 80 + (i * ((canvas.width - 110) / (scores.length - 1)));
+        const pointY = canvas.height - 30 - ((canvas.height - 60) * score / 100);
+        
+        const distance = Math.sqrt(Math.pow(pointX - x, 2) + Math.pow(pointY - y, 2));
+        
+        if(distance < 15) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (pointX + 10) + 'px';
+          tooltip.style.top = (pointY - 30) + 'px';
+          tooltip.textContent = `${months[i]}: ${score}%`;
+        }
+      });
+    });
+    
+    canvas.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+    
+    const render = () => {
+      drawBackground();
+      drawGridlines();
+      drawAxes();
+      drawLabels();
+      drawData();
+    };
+    
+    const resizeChart = () => {
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+      render();
+    };
+    
+    window.addEventListener('resize', resizeChart);
+    resizeChart();
+  };
+
+  // Competitive Success Chart
+  const drawCompetitiveSuccessChart = () => {
+    const canvas = document.getElementById('competitiveSuccessChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const tooltip = canvas.parentElement.querySelector('.chart-tooltip');
+    
+    const data = [
+      { label: 'JEE Main', value: 85, color: '#059669' },
+      { label: 'JEE Advanced', value: 72, color: '#0088ff' },
+      { label: 'NEET', value: 88, color: '#7c3aed' },
+      { label: 'State Exams', value: 92, color: '#f97316' }
+    ];
+    
+    const drawBackground = () => {
+      ctx.fillStyle = '#f8fafc';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    };
+    
+    const drawBars = () => {
+      const barWidth = (canvas.width - 100) / data.length - 20;
+      const maxValue = Math.max(...data.map(d => d.value));
+      
+      data.forEach((item, i) => {
+        const x = 60 + (i * ((canvas.width - 100) / data.length));
+        const height = ((canvas.height - 80) * item.value) / 100;
+        const y = canvas.height - 40 - height;
+        
+        // Draw bar
+        ctx.fillStyle = item.color;
+        ctx.fillRect(x, y, barWidth, height);
+        
+        // Add value on top
+        ctx.fillStyle = '#1f2937';
+        ctx.font = '12px system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText(item.value + '%', x + barWidth/2, y - 5);
+        
+        // Add label below
+        ctx.fillText(item.label, x + barWidth/2, canvas.height - 10);
+      });
+    };
+    
+    const drawAxes = () => {
+      ctx.beginPath();
+      ctx.strokeStyle = '#64748b';
+      ctx.lineWidth = 2;
+      
+      // Y-axis
+      ctx.moveTo(40, 20);
+      ctx.lineTo(40, canvas.height - 40);
+      
+      // X-axis
+      ctx.moveTo(40, canvas.height - 40);
+      ctx.lineTo(canvas.width - 20, canvas.height - 40);
+      
+      ctx.stroke();
+      
+      // Y-axis labels
+      ctx.fillStyle = '#1f2937';
+      ctx.font = '12px system-ui';
+      ctx.textAlign = 'right';
+      
+      for(let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 40 - ((canvas.height - 60) * i / 100);
+        ctx.fillText(i + '%', 35, y + 4);
+      }
+    };
+    
+    const drawGridlines = () => {
+      ctx.beginPath();
+      ctx.strokeStyle = '#e2e8f0';
+      ctx.lineWidth = 1;
+      
+      for(let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 40 - ((canvas.height - 60) * i / 100);
+        ctx.moveTo(40, y);
+        ctx.lineTo(canvas.width - 20, y);
+      }
+      ctx.stroke();
+    };
+    
+    // Handle tooltip
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const barWidth = (canvas.width - 100) / data.length - 20;
+      
+      data.forEach((item, i) => {
+        const barX = 60 + (i * ((canvas.width - 100) / data.length));
+        const height = ((canvas.height - 80) * item.value) / 100;
+        const barY = canvas.height - 40 - height;
+        
+        if(x >= barX && x <= barX + barWidth && y >= barY && y <= barY + height) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (barX + barWidth/2) + 'px';
+          tooltip.style.top = (barY - 30) + 'px';
+          tooltip.textContent = `${item.label}: ${item.value}% Success Rate`;
+        }
+      });
+    });
+    
+    canvas.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+    
+    const render = () => {
+      drawBackground();
+      drawGridlines();
+      drawAxes();
+      drawBars();
+    };
+    
+    const resizeChart = () => {
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+      render();
+    };
+    
+    window.addEventListener('resize', resizeChart);
+    resizeChart();
+  };
+  
+  // Initialize charts when sections become visible
+  document.querySelectorAll('button.nav-link').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if(btn.id === 'foundationBtn') {
+        setTimeout(() => {
+          const foundationChart = document.getElementById('foundationChart');
+          if (foundationChart) {
+            drawFoundationBarChart();
+          }
+        }, 100);
+      }
+      if(btn.id === 'competitiveBtn') {
+        setTimeout(() => {
+          const competitiveChart = document.getElementById('competitiveChart');
+          if (competitiveChart) {
+            drawCompetitivePieChart();
+          }
+        }, 100);
+      }
+    });
+  });
+
+  // Initialize charts on load if sections are visible
+  if(document.getElementById('foundation').classList.contains('active')) {
+    drawFoundationBarChart();
+  }
+  if(document.getElementById('competitive').classList.contains('active')) {
+    drawCompetitivePieChart();
+  }
+});
+
+// Foundation Bar Chart Implementation
+  function drawFoundationBarChart() {
+    const canvas = document.getElementById('foundationChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 400;
+    
+    // Student data for foundation section (90-94% students)
+    const students = [
+      { name: "Dipti Sinha", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { Hindi: 95, Maths: 94, SST: 89 } },
+      { name: "Raveena Kumari", school: "Doon Public School", scores: { Maths: 95, SST: 92 } },
+      { name: "Md Abdul Aziz", school: "Govt. Boys Sec. School", scores: { Hindi: 91, Maths: 94, SST: 91 } },
+      { name: "Faiz Ahmed", school: "Rajindra Public School", scores: { Maths: 92 } },
+      { name: "Sahil Khan", school: "Kendriya Vidyalaya", scores: { Maths: 92 } },
+      { name: "Gurpreet Kaur", school: "Rajindra Public School", scores: { English: 91 } },
+      { name: "Niharika", school: "Rajindra Public School", scores: { Science: 91 } },
+      { name: "Akash Gautam", school: "Rajindra Public School", scores: { Maths: 93 } },
+      { name: "Ravi Yadav", school: "Guru Sharan Convent School", scores: { Maths: 90.5, Science: 92.5 } },
+      { name: "Anurag Chaurasia", school: "Guru Sharan Convent School", scores: { Maths: 92.5, SST: 94 } },
+      { name: "Piyush Verma", school: "Richmond Global School", scores: { "Info Technology": 100 } },
+      { name: "Azim Khan", school: "Kendriya Vidyalaya", scores: { Science: 93 } },
+      { name: "Abhinav", school: "Kendriya Vidyalaya", scores: { Science: 95 } },
+      { name: "Jay Kumar", school: "Kendriya Vidyalaya", scores: { Maths: 93, Science: 95, SST: 88 } },
+      { name: "Harshit", school: "Sunriser's Success Point", scores: { Maths: 95, Science: 95, Social: 96, English: 93 } }
+    ];
+    
+    // Calculate subject-wise averages
+    const subjects = {};
+    students.forEach(student => {
+      Object.entries(student.scores).forEach(([subject, score]) => {
+        if (!subjects[subject]) subjects[subject] = { total: 0, count: 0 };
+        subjects[subject].total += score;
+        subjects[subject].count++;
+      });
+    });
+    
+    // Convert to array format for pie chart
+    const data = [];
+    const colors = ['#059669', '#0088ff', '#7c3aed', '#f97316', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6'];
+    
+    Object.entries(subjects).forEach(([subject, { total, count }], index) => {
+      data.push({
+        label: subject,
+        value: parseFloat((total / count).toFixed(1)),
+        color: colors[index % colors.length]
+      });
+    });
+    
+    // Sort data by value in descending order
+    data.sort((a, b) => b.value - a.value);
+    
+    // Clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#f8fafc';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // Calculate center and radius
+    const centerX = canvas.width / 2;
+    const centerY = canvas.height / 2;
+    const outerRadius = Math.min(canvas.width, canvas.height) / 3;
+    const innerRadius = outerRadius * 0.5; // For doughnut chart
+    
+    // Calculate total for percentages
+    const total = data.reduce((sum, item) => sum + item.value, 0);
+    
+    // Animation setup
+    let animationProgress = 0;
+    const animationDuration = 1000; // 1 second
+    const startTime = performance.now();
+    
+    function render(currentTime) {
+      // Calculate animation progress
+      animationProgress = Math.min((currentTime - startTime) / animationDuration, 1);
+      
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw background
+      ctx.fillStyle = '#f8fafc';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw title
+      ctx.fillStyle = '#1f2937';
+      ctx.font = 'bold 16px system-ui';
+      ctx.textAlign = 'center';
+      ctx.fillText('Subject-wise Average Scores', centerX, 25);
+      
+      // Draw doughnut chart
+      let startAngle = -Math.PI / 2; // Start from top
+      
+      // Draw slices
+      data.forEach((item, index) => {
+        const sliceAngle = (2 * Math.PI * item.value / total) * animationProgress;
+        
+        // Draw slice
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, outerRadius, startAngle, startAngle + sliceAngle);
+        ctx.arc(centerX, centerY, innerRadius, startAngle + sliceAngle, startAngle, true);
+        ctx.closePath();
+        ctx.fillStyle = item.color;
+        ctx.fill();
+        
+        // Draw connecting line and label when animation completes
+        if (animationProgress === 1) {
+          const midAngle = startAngle + sliceAngle / 2;
+          
+          // Calculate label position
+          const labelRadius = outerRadius * 1.3;
+          const textX = centerX + Math.cos(midAngle) * labelRadius;
+          const textY = centerY + Math.sin(midAngle) * labelRadius;
+          
+          // Draw line from slice to label
+          ctx.beginPath();
+          ctx.moveTo(centerX + Math.cos(midAngle) * outerRadius, centerY + Math.sin(midAngle) * outerRadius);
+          ctx.lineTo(centerX + Math.cos(midAngle) * labelRadius * 0.9, centerY + Math.sin(midAngle) * labelRadius * 0.9);
+          ctx.strokeStyle = item.color;
+          ctx.lineWidth = 2;
+          ctx.stroke();
+          
+          // Draw label
+          ctx.fillStyle = '#1f2937';
+          ctx.font = '12px system-ui';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          
+          // Calculate percentage
+          const percentage = ((item.value / total) * 100).toFixed(1);
+          ctx.fillText(`${item.label}: ${item.value}`, textX, textY);
+        }
+        
+        startAngle += sliceAngle;
+      });
+      
+      // Draw center circle for doughnut
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, innerRadius, 0, 2 * Math.PI);
+      ctx.fillStyle = '#f8fafc';
+      ctx.fill();
+      
+      // Draw center text
+      if (animationProgress === 1) {
+        ctx.fillStyle = '#1f2937';
+        ctx.font = 'bold 14px system-ui';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('Average', centerX, centerY - 10);
+        ctx.fillText(`${(total / data.length).toFixed(1)}`, centerX, centerY + 10);
+      }
+      
+      // Continue animation if not complete
+      if (animationProgress < 1) {
+        requestAnimationFrame(render);
+      }
+    }
+      });
+      
+      // Continue animation if not finished
+      if (animationProgress < 1) {
+        requestAnimationFrame(render);
+      }
+    }
+    
+    // Start animation
+    requestAnimationFrame(render);
+    
+    // Handle hover effects
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const padding = 60;
+      const barWidth = (canvas.width - (padding * 2) - (data.length - 1) * 20) / data.length;
+      
+      data.forEach((item, index) => {
+        const barX = padding + index * (barWidth + 20);
+        const barHeight = (canvas.height - padding * 2) * (item.value / 100);
+        const barY = canvas.height - padding - barHeight;
+        
+        if (x >= barX && x <= barX + barWidth && y >= barY && y <= canvas.height - padding) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (barX + barWidth / 2) + 'px';
+          tooltip.style.top = (barY - 30) + 'px';
+          tooltip.textContent = `${item.label}: ${item.value}% Success Rate`;
+        }
+      });
+    });
+    
+    canvas.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+    
+    // Handle resize
+    function resizeChart() {
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+      requestAnimationFrame(render);
+    }
+    
+    window.addEventListener('resize', resizeChart);
+    resizeChart();
+  }
+  
+  // Competitive Bar Chart Implementation
+  function drawCompetitivePieChart() {
+    const canvas = document.getElementById('competitivePieChart');
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const tooltip = canvas.parentElement.querySelector('.chart-tooltip');
+    
+    // Student data for competitive section (Top Achievers – 95%+)
+    const students = [
+      { name: "Khushi Anand", school: "Bosco Pub. Sr. Sec. School", scores: { Maths: 95, Science: 95, Social: 97, English: 95, Hindi: 99 } },
+      { name: "Anand Prajapati", school: "New Jeevan Mission School", scores: { Science: 99, Social: 99, English: 91, Hindi: 98 } },
+      { name: "Sachin", school: "L.L. Col. Mahir Little Angels Sr. Sec. School", scores: { "Info Tech": 100, Maths: 92, Social: 94, English: 90 } },
+      { name: "Adarsh Kr. Thakur", school: "Kendriya Vidyalaya", scores: { Maths: 95, Social: 91 } },
+      { name: "Harman Singh", school: "Richmond Global School", scores: { Maths: 95, Science: 94, Social: 92, English: 87 } },
+      { name: "Rehan Akhtar", school: "Richmond Global School", scores: { Maths: 97, Social: 91 } },
+      { name: "Nisha Singh", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { History: 91, "Political Science": 93 } }
+    ];
+    
+    // Calculate subject-wise averages
+    const subjects = {};
+    students.forEach(student => {
+      Object.entries(student.scores).forEach(([subject, score]) => {
+        if (!subjects[subject]) subjects[subject] = { total: 0, count: 0 };
+        subjects[subject].total += score;
+        subjects[subject].count++;
+      });
+    });
+    
+    // Convert to array format for bar chart
+    const data = [];
+    const colors = ['#059669', '#0088ff', '#7c3aed', '#f97316', '#ef4444', '#8b5cf6', '#ec4899', '#14b8a6'];
+    
+    Object.entries(subjects).forEach(([subject, { total, count }], index) => {
+      data.push({
+        label: subject,
+        value: parseFloat((total / count).toFixed(1)),
+        color: colors[index % colors.length]
+      });
+    });
+    
+    // Sort data by value in descending order
+    data.sort((a, b) => b.value - a.value);
+    
+    // Set canvas dimensions
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = 400;
+    
+    // Animation properties
+    let animationProgress = 0;
+    const animationDuration = 1000;
+    const startTime = performance.now();
+    
+    function render(currentTime) {
+      // Calculate animation progress
+      animationProgress = Math.min((currentTime - startTime) / animationDuration, 1);
+      
+      // Clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw background
+      ctx.fillStyle = '#f8fafc';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw title
+      ctx.fillStyle = '#1f2937';
+      ctx.font = 'bold 16px system-ui';
+      ctx.textAlign = 'center';
+      ctx.fillText('Subject-wise Average Scores', canvas.width / 2, 25);
+      
+      // Draw axes
+      ctx.beginPath();
+      ctx.strokeStyle = '#64748b';
+      ctx.lineWidth = 2;
+      
+      // Y-axis
+      ctx.moveTo(60, 40);
+      ctx.lineTo(60, canvas.height - 40);
+      
+      // X-axis
+      ctx.moveTo(60, canvas.height - 40);
+      ctx.lineTo(canvas.width - 20, canvas.height - 40);
+      ctx.stroke();
+      
+      // Draw grid lines
+      ctx.beginPath();
+      ctx.strokeStyle = '#e2e8f0';
+      ctx.lineWidth = 1;
+      
+      for (let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 40 - ((canvas.height - 80) * i / 100);
+        ctx.moveTo(60, y);
+        ctx.lineTo(canvas.width - 20, y);
+      }
+      ctx.stroke();
+      
+      // Draw Y-axis labels
+      ctx.fillStyle = '#64748b';
+      ctx.font = '12px system-ui';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      
+      for (let i = 0; i <= 100; i += 20) {
+        const y = canvas.height - 40 - ((canvas.height - 80) * i / 100);
+        ctx.fillText(i, 55, y);
+      }
+      
+      // Draw bars
+      const barWidth = (canvas.width - 100) / data.length - 20;
+      
+      data.forEach((item, index) => {
+        const barX = 80 + (index * ((canvas.width - 100) / data.length));
+        const barHeight = ((canvas.height - 80) * item.value / 100) * animationProgress;
+        const barY = canvas.height - 40 - barHeight;
+        
+        // Draw bar
+        ctx.fillStyle = item.color;
+        ctx.fillRect(barX, barY, barWidth, barHeight);
+        
+        // Draw bar value
+        if (animationProgress > 0.7) {
+          ctx.fillStyle = '#1f2937';
+          ctx.font = '12px system-ui';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'bottom';
+          ctx.fillText(item.value.toFixed(1), barX + barWidth / 2, barY - 5);
+        }
+        
+        // Draw X-axis label
+        ctx.fillStyle = '#64748b';
+        ctx.font = '12px system-ui';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillText(item.label, barX + barWidth / 2, canvas.height - 35);
+      });
+      
+      // Continue animation if not finished
+      if (animationProgress < 1) {
+        requestAnimationFrame(render);
+      }
+    }
+    
+    // Start animation
+    requestAnimationFrame(render);
+    
+    // Handle hover effects
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const barWidth = (canvas.width - 100) / data.length - 20;
+      
+      data.forEach((item, index) => {
+        const barX = 80 + (index * ((canvas.width - 100) / data.length));
+        const barHeight = (canvas.height - 80) * item.value / 100;
+        const barY = canvas.height - 40 - barHeight;
+        
+        if (x >= barX && x <= barX + barWidth && y >= barY && y <= barY + barHeight) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (barX + barWidth/2) + 'px';
+          tooltip.style.top = (barY - 30) + 'px';
+          tooltip.textContent = `${item.label}: ${item.value} Average Score`;
+        }
+      });
+      
+      canvas.addEventListener('mouseleave', () => {
+        tooltip.style.display = 'none';
+      });
+    });
+    
+    canvas.addEventListener('mouseleave', () => {
+      tooltip.style.display = 'none';
+    });
+    
+    // Handle resize
+    function resizeChart() {
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+      requestAnimationFrame(render);
+    }
+    
+    window.addEventListener('resize', resizeChart);
+    resizeChart();
+  }
+  // Student Data Arrays
+  const foundationStudents = [
+    { name: "Dipti Sinha", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { Hindi: 95, Maths: 94, SST: 89 } },
+    { name: "Raveena Kumari", school: "Doon Public School", scores: { Maths: 95, SST: 92 } },
+    { name: "Md Abdul Aziz", school: "Govt. Boys Sec. School", scores: { Hindi: 91, Maths: 94, SST: 91 } },
+    { name: "Faiz Ahmed", school: "Rajindra Public School", scores: { Maths: 92 } },
+    { name: "Sahil Khan", school: "Kendriya Vidyalaya", scores: { Maths: 92 } },
+    { name: "Gurpreet Kaur", school: "Rajindra Public School", scores: { English: 91 } },
+    { name: "Niharika", school: "Rajindra Public School", scores: { Science: 91 } },
+    { name: "Akash Gautam", school: "Rajindra Public School", scores: { Maths: 93 } },
+    { name: "Ravi Yadav", school: "Guru Sharan Convent School", scores: { Maths: 90.5, Science: 92.5 } },
+    { name: "Anurag Chaurasia", school: "Guru Sharan Convent School", scores: { Maths: 92.5, SST: 94 } },
+    { name: "Piyush Verma", school: "Richmond Global School", scores: { "Info Technology": 100 } },
+    { name: "Azim Khan", school: "Kendriya Vidyalaya", scores: { Science: 93 } },
+    { name: "Abhinav", school: "Kendriya Vidyalaya", scores: { Science: 95 } },
+    { name: "Jay Kumar", school: "Kendriya Vidyalaya", scores: { Maths: 93, Science: 95, SST: 88 } },
+    { name: "Harshit", school: "Sunriser's Success Point", scores: { Maths: 95, Science: 95, Social: 96, English: 93 } }
+  ];
+
+  const competitiveStudents = [
+    { name: "Khushi Anand", school: "Bosco Pub. Sr. Sec. School", scores: { Maths: 95, Science: 95, Social: 97, English: 95, Hindi: 99 } },
+    { name: "Anand Prajapati", school: "New Jeevan Mission School", scores: { Science: 99, Social: 99, English: 91, Hindi: 98 } },
+    { name: "Sachin", school: "L.L. Col. Mahir Little Angels Sr. Sec. School", scores: { "Info Tech": 100, Maths: 92, Social: 94, English: 90 } },
+    { name: "Adarsh Kr. Thakur", school: "Kendriya Vidyalaya", scores: { Maths: 95, Social: 91 } },
+    { name: "Harman Singh", school: "Richmond Global School", scores: { Maths: 95, Science: 94, Social: 92, English: 87 } },
+    { name: "Rehan Akhtar", school: "Richmond Global School", scores: { Maths: 97, Social: 91 } },
+    { name: "Nisha Singh", school: "Govt. Sarvodaya Kanya Vidyalaya", scores: { History: 91, "Political Science": 93 } }
+  ];
+
+  // Function to generate student cards
+  function createStudentCard(student) {
+    return `
+      <div class="result-card">
+        <h5>${student.name}</h5>
+        <p class="school">${student.school}</p>
+        <div class="scores">
+          ${Object.entries(student.scores)
+            .map(([subject, score]) => `<span>${subject}: ${score}%</span>`)
+            .join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Initialize student carousels
+  function initializeResultCards() {
+    const foundationCards = document.querySelector('.foundation .result-cards');
+    const competitiveCards = document.querySelector('.competitive .result-cards');
+    
+    if (foundationCards) {
+      foundationCards.innerHTML = foundationStudents.map(createStudentCard).join('');
+    }
+    
+    if (competitiveCards) {
+      competitiveCards.innerHTML = competitiveStudents.map(createStudentCard).join('');
+    }
+  }
+
+  // Carousel slide positions
+  let foundationPosition = 0;
+  let competitivePosition = 0;
+
+  // Carousel navigation functions
+  function slideResults(section, direction) {
+    const container = document.querySelector(`.${section} .result-cards`);
+    if (!container) return;
+
+    const cards = container.children;
+    const cardWidth = cards[0].offsetWidth + 16; // Including gap
+    const containerWidth = container.offsetWidth;
+    const maxPosition = -(cards.length * cardWidth - containerWidth);
+    
+    if (section === 'foundation') {
+      foundationPosition += direction === 'next' ? -cardWidth : cardWidth;
+      foundationPosition = Math.max(Math.min(foundationPosition, 0), maxPosition);
+      container.style.transform = `translateX(${foundationPosition}px)`;
+    } else {
+      competitivePosition += direction === 'next' ? -cardWidth : cardWidth;
+      competitivePosition = Math.max(Math.min(competitivePosition, 0), maxPosition);
+      container.style.transform = `translateX(${competitivePosition}px)`;
+    }
+  }
+
+  function slideFoundationResults(direction) {
+    slideResults('foundation', direction);
+  }
+
+  function slideCompetitiveResults(direction) {
+    slideResults('competitive', direction);
+  }
+
+  // Initialize everything once DOM is loaded
+  // Initialize main functionality
+
+    // Initialize everything when DOM is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize result cards
+    initializeResultCards();
+    const whatsappFloat = document.querySelector('.whatsapp-float');
+    const whatsappButton = whatsappFloat?.querySelector('.whatsapp-button');
+    const whatsappPopup = whatsappFloat?.querySelector('.whatsapp-popup');
+    const whatsappClose = whatsappFloat?.querySelector('.whatsapp-close');
+    const whatsappOptions = whatsappFloat?.querySelectorAll('.whatsapp-option');
+    const whatsappInput = whatsappFloat?.querySelector('.whatsapp-input');
+    const whatsappSend = whatsappFloat?.querySelector('.whatsapp-send');
+
+    if (whatsappButton && whatsappPopup) {
+      // Toggle popup on button click
+      whatsappButton.addEventListener('click', (e) => {
+        e.stopPropagation();
+        whatsappPopup.classList.toggle('active');
+        if (whatsappInput) whatsappInput.focus();
+      });
+
+      // Close popup when clicking close button
+      whatsappClose?.addEventListener('click', () => {
+        whatsappPopup.classList.remove('active');
+      });
+
+      // Close popup when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!whatsappFloat.contains(e.target)) {
+          whatsappPopup.classList.remove('active');
+        }
+      });
+
+      // Handle template options
+      whatsappOptions?.forEach(option => {
+        option.addEventListener('click', () => {
+          const text = encodeURIComponent(option.textContent.trim());
+          window.open(`https://wa.me/919953908690?text=${text}`, '_blank');
+          whatsappPopup.classList.remove('active');
+        });
+      });
+
+      // Handle custom message input
+      if (whatsappInput && whatsappSend) {
+        const sendWhatsAppMessage = () => {
+          const message = whatsappInput.value.trim();
+          if (message) {
+            const text = encodeURIComponent(message);
+            window.open(`https://wa.me/919953908690?text=${text}`, '_blank');
+            whatsappPopup.classList.remove('active');
+            whatsappInput.value = '';
+          }
+        };
+
+        whatsappInput.addEventListener('keypress', (e) => {
+          if (e.key === 'Enter') {
+            sendWhatsAppMessage();
+          }
+        });
+
+        whatsappSend.addEventListener('click', sendWhatsAppMessage);
+      }
+
+      // Close with Escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && whatsappPopup.classList.contains('active')) {
+          whatsappPopup.classList.remove('active');
+        }
+      });
+    }
+  });
+});
+</script>
+
+  <!-- Body End -->
+</body>
+</html>
