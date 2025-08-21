@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hi">
 
 <head>
@@ -1197,40 +1197,66 @@
         font-size: 1.2rem;
       }
     }
-  /* Course sections (user-provided) */
-  .course-section { text-align: center; margin: 50px 0; }
-  .course-section h2 { font-size: 28px; margin-bottom: 8px; }
-  .course-section .subheading { font-size: 18px; color: #555; margin-bottom: 20px; }
-  .enroll-now-btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-  }
-  .enroll-now-btn:hover { background-color: #e65c00; transform: scale(1.05); }
-  /* Floating WhatsApp Icon */
-  .whatsapp-float {
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25d366;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 999;
-    transition: 0.3s ease-in-out;
-  }
-  .whatsapp-float:hover { transform: scale(1.1); }
-  .whatsapp-float img { width: 30px; height: 30px; }
+
+    /* Course sections (user-provided) */
+    .course-section {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .course-section h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .course-section .subheading {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .enroll-now-btn {
+      display: inline-block;
+      background-color: #ff6600;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .enroll-now-btn:hover {
+      background-color: #e65c00;
+      transform: scale(1.05);
+    }
+
+    /* Floating WhatsApp Icon */
+    .whatsapp-float {
+      position: fixed;
+      width: 55px;
+      height: 55px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      z-index: 999;
+      transition: 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+      width: 30px;
+      height: 30px;
+    }
   </style>
 </head>
 
@@ -1263,9 +1289,9 @@
     </div>
   </header>
 
-  
 
-  
+
+
 
   <nav class="navbar" id="mainNav">
     <button id="academicBtn" class="nav-link active" onclick="showCourseDetails('academic')">
@@ -1355,7 +1381,7 @@
             <li>Comprehensive study materials and practice worksheets</li>
             <li>Interactive learning through modern smart board technology</li>
           </ul>
-          
+
         </article>
 
         <article class="course-card">
@@ -1389,7 +1415,7 @@
             <li>Proven track record with consistent 95%+ success rate</li>
             <li>Special intensive crash courses before board examinations</li>
           </ul>
-          
+
         </article>
 
         <article class="course-card">
@@ -1420,7 +1446,7 @@
             <li>Regular doubt clearing sessions and collaborative peer learning</li>
             <li>Advanced laboratory experiments and hands-on practicals</li>
           </ul>
-          
+
         </article>
       </div>
     </section>
@@ -1494,7 +1520,7 @@
             <li>Speed building exercises and effective time management strategies</li>
             <li>Regular motivational workshops featuring success stories</li>
           </ul>
-          
+
         </article>
 
         <article class="course-card">
@@ -1513,13 +1539,13 @@
             <li>Mock interviews and personality development training sessions</li>
             <li>Extensive question bank with previous years' solved papers</li>
           </ul>
-          
+
         </article>
 
         <article class="course-card">
           <div class="course-image-gallery">
             <div class="course-image-item">
-              <img src="storage/image12.jpg" alt="Olympiad Training" width="180" height="135" />
+              <img src="storage/image12.jpg" alt="Olympiad Training" onerror="src'image12.jpg"="180" height="135" />
               <div class="image-overlay">Olympiad Excellence</div>
             </div>
           </div>
@@ -1531,7 +1557,7 @@
             <li>International competition preparation strategies and techniques</li>
             <li>Creative problem-solving workshops and analytical thinking sessions</li>
           </ul>
-          
+
         </article>
       </div>
     </section>
@@ -1602,7 +1628,7 @@
             <li>Advanced problem-solving techniques and efficient shortcuts</li>
             <li>Regular doubt clearing sessions and collaborative peer discussions</li>
           </ul>
-          
+
         </article>
 
         <article class="course-card">
@@ -1662,7 +1688,9 @@
     </section>
 
     <!-- WhatsApp Float Button -->
-    <a class="whatsapp-float" href="https://wa.me/919953908690?text=Hello%20Sir%2C%20I%20have%20a%20doubt%20regarding%20your%20classes." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a class="whatsapp-float"
+      href="https://wa.me/919953908690?text=Hello%20Sir%2C%20I%20have%20a%20doubt%20regarding%20your%20classes."
+      target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
       <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="55" height="55">
     </a>
 
@@ -2966,20 +2994,20 @@
     window.addEventListener('resize', resizeChart);
     resizeChart();
   }
-  /* Optional style for anchor-based Enroll button */
-  a.enroll-btn {
-    display: inline-block;
-    background-color: #ff6600;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-    margin-top: 8px;
-  }
-  a.enroll-btn:hover { background-color: #e65c00; }
+    /* Optional style for anchor-based Enroll button */
+    a.enroll - btn {
+      display: inline - block;
+      background - color: #ff6600;
+      color: #fff;
+      font - size: 18px;
+      font - weight: bold;
+      padding: 12px 25px;
+      border - radius: 50px;
+      text - decoration: none;
+      transition: 0.3s ease -in -out;
+      margin - top: 8px;
+    }
+    a.enroll - btn:hover { background - color: #e65c00; }
 
     // Competitive Bar Chart Implementation
     function drawCompetitivePieChart() {
